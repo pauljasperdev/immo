@@ -5,6 +5,7 @@ export const secrets = {
   DatabaseUrlPooler: new sst.Secret('DatabaseUrlPooler'),
   BetterAuthSecret: new sst.Secret('BetterAuthSecret'),
   CertArn: new sst.Secret('CertArn'),
+  GoogleGenAiApiKey: new sst.Secret('GoogleGenAiApiKey'),
 };
 
 export const allSecrets = Object.values(secrets);

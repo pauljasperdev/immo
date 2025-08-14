@@ -8,14 +8,12 @@ import * as schema from './auth.sql';
 export const auth = betterAuth({
   database: drizzleAdapter(db, {
     provider: 'pg',
-
     schema,
   }),
-  trustedOrigins: [process.env.CORS_ORIGIN || '', 'my-better-t-app://'],
+  trustedOrigins: [process.env.CORS_ORIGIN || '', 'immo-app://'],
   emailAndPassword: {
     enabled: true,
   },
   secret: process.env.BETTER_AUTH_SECRET,
-  baseURL: process.env.BETTER_AUTH_URL,
   plugins: [expo()],
 });
