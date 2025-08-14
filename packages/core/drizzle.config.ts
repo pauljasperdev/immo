@@ -1,10 +1,13 @@
-import { defineConfig } from "drizzle-kit";
+import { defineConfig } from 'drizzle-kit';
+import { Resource } from 'sst';
 
 export default defineConfig({
-  schema: "./src/db/schema",
-  out: "./src/db/migrations",
-  dialect: "postgresql",
+  strict: true,
+  verbose: true,
+  dialect: 'postgresql',
+  schema: ['./src/**/*.sql.ts'],
+  out: './migrations',
   dbCredentials: {
-    url: process.env.DATABASE_URL || "",
+    url: Resource.Neon.url,
   },
 });
