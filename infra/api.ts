@@ -1,5 +1,8 @@
 // biome-ignore-all lint: SST is globally available
-export const api = new sst.aws.Function('Hono', {
+import { neon } from './neon';
+
+export const api = new sst.aws.Function('Api', {
+  link: [neon],
   url: true,
-  handler: 'src/index.handler',
+  handler: 'apps/server/src/index.handler',
 });

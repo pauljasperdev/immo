@@ -23,6 +23,7 @@ export default $config({
   async run() {
     await import('./infra/neon');
     await import('./infra/api');
+    await import('./infra/native');
 
     return {};
   },

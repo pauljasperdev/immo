@@ -1,12 +1,18 @@
-import { createAuthClient } from "better-auth/react";
-import { expoClient } from "@better-auth/expo/client";
-import * as SecureStore from "expo-secure-store";
+import { expoClient } from '@better-auth/expo/client';
+import { createAuthClient } from 'better-auth/react';
+// biome-ignore lint/performance/noNamespaceImport: <generated code>
+import * as SecureStore from 'expo-secure-store';
+
+const TRAILING_SLASH_REGEX = /\/$/;
 
 export const authClient = createAuthClient({
-  baseURL: process.env.EXPO_PUBLIC_SERVER_URL,
+  baseURL: process.env.EXPO_PUBLIC_SERVER_URL?.replace(
+    TRAILING_SLASH_REGEX,
+    ''
+  ),
   plugins: [
     expoClient({
-      storagePrefix: "my-better-t-app",
+      storagePrefix: 'immo-app',
       storage: SecureStore,
     }),
   ],

@@ -6,8 +6,9 @@
     "packages/*"
   ],
   "scripts": {
+    "i": "pnpm install -w",
     "check": "biome check --write .",
-    "dev": "pnpm -r dev",
+    "dev": "sst dev",
     "build": "pnpm -r build",
     "check-types": "pnpm -r check-types",
     "dev:native": "pnpm --filter native dev",
