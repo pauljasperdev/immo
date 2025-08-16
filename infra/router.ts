@@ -3,7 +3,7 @@
 import { secrets } from './secrets';
 
 export const domainName =
-  $app.stage === 'production' ? '' : 'immo.pauljasper.dev';
+  $app.stage === 'production' ? '' : `${$app.stage}.immo.pauljasper.dev`;
 
 export const domainAliases =
   $app.stage === 'production' ? [] : [`*.${$app.stage}.immo.pauljasper.dev`];
