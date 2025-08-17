@@ -53,12 +53,39 @@ export default $config({
       },
       async workflow({ $, event }) {
         await $`npm i -g pnpm`;
+        await $`pnpm i -g eas-cli`;
         await $`pnpm i`;
+
+        // EXPO_TOKEN set in sst console varaibles
+        await $`eas login --non-interactive`;
+
         if (event.action === 'removed') {
           await $`pnpm sst remove`;
         } else {
-          // await $`cd packages/core && pnpm db migrate`;
+          // Deploy SST infrastructure first
           await $`pnpm sst deploy`;
+
+          // Get the API URL after deployment
+          const apiUrl = await $`pnpm api:url`.text();
+          const cleanApiUrl = apiUrl.trim();
+
+          // Update EAS environment variable with the new URL
+          await $`eas env:update --profile $SST_STAGE EXPO_PUBLIC_SERVER_URL="${cleanApiUrl}"`;
+
+          // Trigger EAS build (remove --wait to not execute here)
+          if (
+            event.type === 'branch' &&
+            ['main', 'production'].includes(event.branch)
+          ) {
+            // Trigger production build remotely
+            await $`eas build --profile production --platform all --non-interactive`;
+          } else {
+            // Trigger development build remotely
+            await $`eas build --profile dev --platform all --non-interactive`;
+          }
+
+          console.log(`EAS build triggered successfully for stage: $SST_STAGE`);
+          console.log(`API URL set to: ${cleanApiUrl}`);
         }
       },
     },

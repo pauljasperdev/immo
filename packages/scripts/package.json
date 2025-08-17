@@ -1,0 +1,14 @@
+{
+  "name": "scripts",
+  "type": "module",
+  "scripts": {
+    "env:apiUrl": "tsx src/env/apiUrl.ts"
+  },
+  "dependencies": {
+    "sst": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.11",
+    "tsx": "^4.19.2"
+  }
+}
