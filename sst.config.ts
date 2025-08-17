@@ -53,11 +53,10 @@ export default $config({
       },
       async workflow({ $, event }) {
         await $`npm i -g pnpm`;
-        await $`pnpm i -g eas-cli`;
-        await $`pnpm i`;
+        await $`npm i -g eas-cli`;
+        await $`pnpm install -w`;
 
-        // EXPO_TOKEN set in sst console varaibles
-        await $`eas login --non-interactive`;
+        // EXPO_TOKEN set in sst console varaibles. no login needed.
 
         if (event.action === 'removed') {
           await $`pnpm sst remove`;
@@ -70,7 +69,7 @@ export default $config({
           const cleanApiUrl = apiUrl.trim();
 
           // Update EAS environment variable with the new URL
-          await $`eas env:update --profile $SST_STAGE EXPO_PUBLIC_SERVER_URL="${cleanApiUrl}"`;
+          await $`eas env:create--profile $SST_STAGE EXPO_PUBLIC_SERVER_URL="${cleanApiUrl}"`;
 
           // Trigger EAS build (remove --wait to not execute here)
           if (
