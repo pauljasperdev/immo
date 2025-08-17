@@ -66,7 +66,7 @@ export default $config({
           await $`pnpm sst deploy`;
 
           // Get the API URL after deployment
-          const apiUrl = await $`pnpm api:url`.text();
+          const apiUrl = await $`pnpm env:apiUrl`.text();
           const cleanApiUrl = apiUrl.trim();
 
           // Update EAS environment variable with the new URL
