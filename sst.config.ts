@@ -69,19 +69,9 @@ export default $config({
           const cleanApiUrl = apiUrl.trim();
 
           // Update EAS environment variable with the new URL
-          await $`eas env:create--profile $SST_STAGE EXPO_PUBLIC_SERVER_URL="${cleanApiUrl}"`;
+          await $`eas env:create --profile $SST_STAGE EXPO_PUBLIC_SERVER_URL="${cleanApiUrl}"`;
 
-          // Trigger EAS build (remove --wait to not execute here)
-          if (
-            event.type === 'branch' &&
-            ['main', 'production'].includes(event.branch)
-          ) {
-            // Trigger production build remotely
-            await $`eas build --profile production --platform all --non-interactive`;
-          } else {
-            // Trigger development build remotely
-            await $`eas build --profile dev --platform all --non-interactive`;
-          }
+          await $`eas build --profile $SST_STAGE --platform ios--non-interactive --no-wait`;
 
           console.log(`EAS build triggered successfully for stage: $SST_STAGE`);
           console.log(`API URL set to: ${cleanApiUrl}`);
