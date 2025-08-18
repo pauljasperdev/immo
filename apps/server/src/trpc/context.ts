@@ -1,4 +1,4 @@
-import { auth } from 'core/auth';
+import { auth } from '@immo/core/auth';
 import type { Context as HonoContext } from 'hono';
 
 export type CreateContextOptions = {

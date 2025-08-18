@@ -1,6 +1,6 @@
 {
   "build": {
-    "personal": {
+    "preview": {
       "developmentClient": true,
       "distribution": "internal",
       "ios": {
@@ -10,7 +10,7 @@
         "EXPO_PUBLIC_SERVER_URL": "$EXPO_PUBLIC_SERVER_URL"
       }
     },
-    "dev": {
+    "development": {
       "distribution": "internal",
       "ios": {
         "resourceClass": "m-medium"

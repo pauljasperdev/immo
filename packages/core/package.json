@@ -1,14 +1,14 @@
 {
-  "name": "core",
+  "name": "@immo/core",
   "type": "module",
   "scripts": {
-    "build": "tsdown",
-    "check-types": "tsc -b",
+    "build": "bun run tsdown",
+    "check-types": "bun run tsc -b",
     "compile": "bun build --compile --minify --sourcemap --bytecode ./src/index.ts --outfile server",
-    "db:push": "sst shell drizzle-kit push",
-    "db:studio": "sst shell drizzle-kit studio",
-    "db:generate": "sst shell drizzle-kit generate",
-    "db:migrate": "sst shell drizzle-kit migrate"
+    "db:push": "sst shell bun run drizzle-kit push",
+    "db:studio": "sst shell bun run drizzle-kit studio",
+    "db:generate": "sst shell bun run drizzle-kit generate",
+    "db:migrate": "sst shell bun run drizzle-kit migrate"
   },
   "exports": {
     "./*": [

@@ -2,7 +2,7 @@
   "name": "scripts",
   "type": "module",
   "scripts": {
-    "env:apiUrl": "tsx src/env/apiUrl.ts"
+    "env:apiUrl": "bun run tsx src/env/apiUrl.ts"
   },
   "dependencies": {
     "sst": "*"

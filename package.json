@@ -6,17 +6,15 @@
     "packages/*"
   ],
   "scripts": {
-    "inst": "pnpm install -w",
     "check": "biome check --write .",
     "dev": "sst dev",
-    "build": "pnpm -r build",
-    "check-types": "pnpm -r check-types",
-    "env:apiUrl": "sst shell -- pnpm --filter scripts env:apiUrl",
-    "build:native": "EXPO_PUBLIC_SERVER_URL=$(pnpm env:apiUrl) pnpm --filter native build",
-    "db:push": "sst shell -- pnpm --filter core db:push",
-    "db:studio": "sst shell -- pnpm --filter server db:studio",
-    "db:generate": "sst shell -- pnpm --filter server db:generate",
-    "db:migrate": "sst shell -- pnpm --filter server db:migrate"
+    "check-types": "bun --recursive check-types",
+    "env:apiUrl": "sst shell -- bun --cwd packages/scripts env:apiUrl",
+    "build:native": "EXPO_PUBLIC_SERVER_URL=$(bun env:apiUrl) bun --cwd apps/native build",
+    "db:push": "sst shell -- bun --cwd packages/core db:push",
+    "db:studio": "sst shell -- bun --cwd packages/core db:studio",
+    "db:generate": "sst shell -- bun --cwd packages/core db:generate",
+    "db:migrate": "sst shell -- bun --cwd packages/core db:migrate"
   },
   "dependencies": {
     "sst": "^3.17.10"
@@ -25,5 +23,5 @@
     "@biomejs/biome": "2.1.2",
     "ultracite": "5.1.1"
   },
-  "packageManager": "pnpm@10.3.0"
+  "packageManager": "bun@1.2.2"
 }

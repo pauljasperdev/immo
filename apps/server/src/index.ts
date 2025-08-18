@@ -1,8 +1,8 @@
 import 'dotenv/config';
 import { google } from '@ai-sdk/google';
 import { trpcServer } from '@hono/trpc-server';
+import { auth } from '@immo/core/auth';
 import { convertToModelMessages, streamText } from 'ai';
-import { auth } from 'core/auth';
 import { Hono } from 'hono';
 import { handle, streamHandle } from 'hono/aws-lambda';
 import { cors } from 'hono/cors';

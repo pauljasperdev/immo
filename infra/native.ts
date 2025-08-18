@@ -8,6 +8,6 @@ export const native = new sst.x.DevCommand('Native', {
   },
   dev: {
     directory: 'apps/native',
-    command: 'pnpm dev',
+    command: 'bun dev',
   },
 });
