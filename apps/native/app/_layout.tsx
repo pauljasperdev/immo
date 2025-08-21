@@ -57,7 +57,7 @@ export default function RootLayout() {
         <StatusBar style={isDarkColorScheme ? 'light' : 'dark'} />
         <GestureHandlerRootView style={{ flex: 1 }}>
           <Stack>
-            <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
+            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
             <Stack.Screen
               name="modal"
               options={{ title: 'Modal', presentation: 'modal' }}
