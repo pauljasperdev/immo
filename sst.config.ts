@@ -21,11 +21,14 @@ export default $config({
     };
   },
   async run() {
+    const { router } = await import('./infra/router');
     await import('./infra/neon');
     await import('./infra/api');
     await import('./infra/native');
 
-    return {};
+    return {
+      router: router.distributionID,
+    };
   },
   console: {
     autodeploy: {
