@@ -75,10 +75,10 @@ export default $config({
             { dev: 'development', production: 'production' }[stage] ??
             'preview';
 
+          await $`cd apps/native && eas init --non-interactive`;
           // Update EAS environment variable with the new URL
-          await $`eas env:create ${easProfile} --name EXPO_PUBLIC_SERVER_URL --value "${cleanApiUrl}" --visibility plaintext --non-interactive`;
-
-          await $`eas build --profile ${easProfile} --platform ios --non-interactive --no-wait`;
+          await $`cd apps/native && eas env:create ${easProfile} --name EXPO_PUBLIC_SERVER_URL --value "${cleanApiUrl}" --visibility plaintext --non-interactive`;
+          await $`cd apps/native && eas build --profile ${easProfile} --platform ios --non-interactive --no-wait`;
 
           console.log(
             `EAS build triggered successfully for stage: $SST_STAGE\nAPI URL set to: ${cleanApiUrl}`
