@@ -23,11 +23,12 @@ export default $config({
   async run() {
     const { router } = await import('./infra/router');
     await import('./infra/neon');
-    await import('./infra/api');
+    const { apiUrl } = await import('./infra/api');
     await import('./infra/native');
 
     return {
       Router_ID: router.distributionID,
+      API_URL: apiUrl,
     };
   },
   console: {
@@ -79,7 +80,7 @@ export default $config({
           await $`cd apps/native && eas init --non-interactive`;
           // Update EAS environment variable with the new URL
           await $`cd apps/native && eas env:create ${easProfile} --name EXPO_PUBLIC_SERVER_URL --value "${cleanApiUrl}" --visibility plaintext --non-interactive --force`;
-          await $`cd apps/native && eas build --profile ${easProfile} --platform ios --non-interactive --no-wait`;
+          // await $`cd apps/native && eas build --profile ${easProfile} --platform ios --non-interactive --no-wait`;
 
           console.log(
             `EAS build triggered successfully for stage: $SST_STAGE\nAPI URL set to: ${cleanApiUrl}`
