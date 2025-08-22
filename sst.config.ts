@@ -66,6 +66,7 @@ export default $config({
         } else {
           // Deploy SST infrastructure first
           await $`bun sst deploy`;
+          await $`bun db:migrate`;
 
           // Get the API URL after deployment
           const apiUrl = await $`bun env:apiUrl`.text();
