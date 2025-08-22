@@ -20,4 +20,4 @@ export const router = isPermanentStage
         cert: secrets.CertArn.value,
       },
     })
-  : sst.aws.Router.get('Router', 'EFSOATM4BIF5E');
+  : sst.aws.Router.get('Router', 'ENPQU7DO4APH7');
