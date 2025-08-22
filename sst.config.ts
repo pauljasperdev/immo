@@ -27,7 +27,7 @@ export default $config({
     await import('./infra/native');
 
     return {
-      router: router.distributionID,
+      Router_ID: router.distributionID,
     };
   },
   console: {

@@ -1,8 +1,6 @@
 // biome-ignore-all lint: SST is globally available
 
-import { api } from './api';
-
-const apiUrl = api.url.apply((url) => (url.endsWith('/') ? url : `${url}/`));
+import { api, apiUrl } from './api';
 
 export const native = new sst.x.DevCommand('Native', {
   environment: {
