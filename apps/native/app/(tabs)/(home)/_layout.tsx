@@ -1,27 +1,50 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import {
+  type DrawerContentComponentProps,
+  DrawerContentScrollView,
+  DrawerItem,
+  DrawerItemList,
+} from '@react-navigation/drawer';
 import { Drawer } from 'expo-router/drawer';
-import { NAV_THEME } from '@/lib/constants';
+import { View } from 'react-native';
+
+function CustomDrawerContent(props: DrawerContentComponentProps) {
+  return (
+    <DrawerContentScrollView
+      {...props}
+      className="flex-1 bg-background"
+      contentContainerStyle={{ flexGrow: 1 }}
+    >
+      {/* Main navigation items */}
+      <View className="flex-1">
+        <DrawerItemList {...props} />
+      </View>
+
+      {/* Settings at the bottom */}
+      <View>
+        <DrawerItem
+          icon={({ color, size }) => (
+            <FontAwesome color={color} name="cog" size={size} />
+          )}
+          label="Settings"
+          labelStyle={{
+            fontWeight: '600',
+          }}
+          onPress={() => props.navigation.navigate('settings')}
+        />
+      </View>
+    </DrawerContentScrollView>
+  );
+}
 
 export default function HomeDrawerLayout() {
   return (
     <Drawer
+      drawerContent={(props) => <CustomDrawerContent {...props} />}
       screenOptions={{
         headerShown: true,
         drawerStyle: {
-          backgroundColor: NAV_THEME.dark.background,
           width: 280,
-        },
-        drawerContentStyle: {
-          backgroundColor: NAV_THEME.dark.background,
-        },
-        drawerActiveTintColor: NAV_THEME.dark.primary,
-        drawerInactiveTintColor: NAV_THEME.dark.mutedForeground,
-        headerStyle: {
-          backgroundColor: NAV_THEME.dark.background,
-        },
-        headerTintColor: NAV_THEME.dark.text,
-        headerTitleStyle: {
-          fontWeight: '600',
         },
       }}
     >
@@ -41,6 +64,13 @@ export default function HomeDrawerLayout() {
           drawerIcon: ({ color, size }) => (
             <FontAwesome color={color} name="compass" size={size} />
           ),
+        }}
+      />
+      <Drawer.Screen
+        name="settings"
+        options={{
+          title: 'Settings',
+          drawerItemStyle: { display: 'none' },
         }}
       />
     </Drawer>
