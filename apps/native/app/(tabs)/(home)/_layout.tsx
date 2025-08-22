@@ -1,39 +1,25 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Drawer } from 'expo-router/drawer';
-import { useColorScheme } from '@/lib/use-color-scheme';
+import { NAV_THEME } from '@/lib/constants';
 
 export default function HomeDrawerLayout() {
-  const { isDarkColorScheme } = useColorScheme();
-
   return (
     <Drawer
       screenOptions={{
         headerShown: true,
         drawerStyle: {
-          backgroundColor: isDarkColorScheme
-            ? 'hsl(222.2 84% 4.9%)'
-            : 'hsl(0 0% 100%)',
+          backgroundColor: NAV_THEME.dark.background,
           width: 280,
         },
         drawerContentStyle: {
-          backgroundColor: isDarkColorScheme
-            ? 'hsl(222.2 84% 4.9%)'
-            : 'hsl(0 0% 100%)',
+          backgroundColor: NAV_THEME.dark.background,
         },
-        drawerActiveTintColor: isDarkColorScheme
-          ? 'hsl(217.2 91.2% 59.8%)'
-          : 'hsl(221.2 83.2% 53.3%)',
-        drawerInactiveTintColor: isDarkColorScheme
-          ? 'hsl(215 20.2% 65.1%)'
-          : 'hsl(215.4 16.3% 46.9%)',
+        drawerActiveTintColor: NAV_THEME.dark.primary,
+        drawerInactiveTintColor: NAV_THEME.dark.mutedForeground,
         headerStyle: {
-          backgroundColor: isDarkColorScheme
-            ? 'hsl(222.2 84% 4.9%)'
-            : 'hsl(0 0% 100%)',
+          backgroundColor: NAV_THEME.dark.background,
         },
-        headerTintColor: isDarkColorScheme
-          ? 'hsl(210 40% 98%)'
-          : 'hsl(222.2 84% 4.9%)',
+        headerTintColor: NAV_THEME.dark.text,
         headerTitleStyle: {
           fontWeight: '600',
         },

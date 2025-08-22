@@ -156,7 +156,7 @@ export default function AIScreen() {
                   onSubmit();
                 }}
                 placeholder="Type your message..."
-                placeholderTextColor="#6b7280"
+                placeholderTextColor="hsl(var(--muted-foreground))"
                 value={input}
               />
               <TouchableOpacity
@@ -167,7 +167,11 @@ export default function AIScreen() {
                 onPress={onSubmit}
               >
                 <Ionicons
-                  color={input.trim() ? '#ffffff' : '#6b7280'}
+                  color={
+                    input.trim()
+                      ? 'hsl(var(--primary-foreground))'
+                      : 'hsl(var(--muted-foreground))'
+                  }
                   name="send"
                   size={20}
                 />
