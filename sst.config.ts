@@ -26,6 +26,8 @@ export default $config({
     const { apiUrl } = await import('./infra/api');
     await import('./infra/native');
 
+    await import('./infra/transcribe');
+
     return {
       Router_ID: router.distributionID,
       API_URL: apiUrl,

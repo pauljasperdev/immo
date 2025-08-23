@@ -1,8 +1,7 @@
 // biome-ignore-all lint: SST is globally available
 
 import { secrets } from './secrets';
-
-const isPermanentStage = ['production', 'dev'].includes($app.stage);
+import { isPermanentStage } from './utils';
 
 export const domain =
   $app.stage === 'production'
