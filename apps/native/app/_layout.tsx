@@ -6,8 +6,10 @@ import { StatusBar } from 'expo-status-bar';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import '../global.css';
 import React, { useRef } from 'react';
-import { Platform } from 'react-native';
+import { Platform, Text, View } from 'react-native';
+import { SignIn } from '@/components/sign-in';
 import { setAndroidNavigationBar } from '@/lib/android-navigation-bar';
+import { authClient } from '@/lib/auth-client';
 import { NAV_THEME } from '@/lib/constants';
 import { useColorScheme } from '@/lib/use-color-scheme';
 import { queryClient } from '@/utils/trpc';
@@ -17,14 +19,38 @@ const DARK_THEME: Theme = {
   colors: NAV_THEME.dark,
 };
 
-export const unstable_settings = {
-  initialRouteName: '(drawer)',
-};
+function AuthenticatedApp() {
+  return (
+    <Stack>
+      <Stack.Screen name="home" options={{ headerShown: false }} />
+      <Stack.Screen
+        name="modal"
+        options={{ title: 'Modal', presentation: 'modal' }}
+      />
+    </Stack>
+  );
+}
 
+function UnauthenticatedApp() {
+  return (
+    <View className="flex-1 justify-center bg-background p-6">
+      <SignIn />
+    </View>
+  );
+}
+
+function SplashScreen() {
+  return (
+    <View className="flex-1 items-center justify-center bg-background">
+      <Text className="text-foreground">SplashScreen</Text>
+    </View>
+  );
+}
 export default function RootLayout() {
   const hasMounted = useRef(false);
   const { colorScheme } = useColorScheme();
   const [isColorSchemeLoaded, setIsColorSchemeLoaded] = React.useState(false);
+  const { data: session, isPending } = authClient.useSession();
 
   useIsomorphicLayoutEffect(() => {
     if (hasMounted.current) {
@@ -39,21 +65,20 @@ export default function RootLayout() {
     hasMounted.current = true;
   }, []);
 
-  if (!isColorSchemeLoaded) {
-    return null;
+  if (!isColorSchemeLoaded || isPending) {
+    return (
+      <View className="flex-1 items-center justify-center bg-background">
+        <SplashScreen />
+      </View>
+    );
   }
+
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider value={DARK_THEME}>
         <StatusBar style="light" />
-        <GestureHandlerRootView style={{ flex: 1 }}>
-          <Stack>
-            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-            <Stack.Screen
-              name="modal"
-              options={{ title: 'Modal', presentation: 'modal' }}
-            />
-          </Stack>
+        <GestureHandlerRootView className="bg-background" style={{ flex: 1 }}>
+          {session?.user ? <AuthenticatedApp /> : <UnauthenticatedApp />}
         </GestureHandlerRootView>
       </ThemeProvider>
     </QueryClientProvider>
