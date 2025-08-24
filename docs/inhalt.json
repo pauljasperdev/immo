@@ -1,0 +1,2039 @@
+{
+  "wiki": {
+    "title": "Immobilien Investment Wiki",
+    "description": "Umfassendes Nachschlagewerk für Immobilieninvestments",
+    "sections": [
+      {
+        "id": "grundlagen",
+        "title": "Grundlagen",
+        "description": "Fundamentales Wissen für Immobilieninvestments",
+        "pages": [
+          {
+            "id": "eigenkapital-vs-fremdkapital",
+            "title": "Eigenkapital vs. Fremdkapital",
+            "description": "Entscheidungsmacht vs. zeitliche Begrenzung, Vor- und Nachteile"
+          },
+          {
+            "id": "eigenkapital-macht",
+            "title": "Macht des Eigenkapitals",
+            "description": "Entscheidungen treffen, Einnahmen behalten, Verkaufserlöse, Aufwendungen tragen"
+          },
+          {
+            "id": "fremdkapital-eigenschaften",
+            "title": "Fremdkapital-Eigenschaften",
+            "description": "Bank entscheidet nicht mit, zeitlich begrenzt, Zinsen + Tilgung, Sicherheit nötig"
+          },
+          {
+            "id": "banken-finanzieren-100-prozent",
+            "title": "Banken finanzieren oft 100%+",
+            "description": "Vollfinanzierung möglich, nur Erwerbsnebenkosten aus Eigenkapital"
+          },
+          {
+            "id": "zinsniveau-historisch-niedrig",
+            "title": "Zinsniveau historisch niedrig",
+            "description": "Heute mehr leistbar als früher, günstiges Fremdkapital nutzen"
+          },
+          {
+            "id": "warum-schulden-gut-sind",
+            "title": "Warum Schulden gut sind",
+            "description": "Leverage-Effekt und Vorteile der Immobilienfinanzierung"
+          },
+          {
+            "id": "eigenkapital-quellen",
+            "title": "Eigenkapital-Quellen systematisch erfassen",
+            "description": "Ersparnisse, Aktien, Erbe, Freundinnen, Eltern, Immobilien als Sicherheit"
+          },
+          {
+            "id": "eigenkapital-berechnung",
+            "title": "Eigenkapital-Berechnung",
+            "description": "Vermögen summieren, Verbindlichkeiten abziehen (außer Immobilienkredite)"
+          },
+          {
+            "id": "eigenkapital-strategien",
+            "title": "Eigenkapital-Strategien",
+            "description": "10-15% Minimum, 20-25% konservativ, 10% + Reserve praktisch"
+          },
+          {
+            "id": "kaufpreis-berechnung",
+            "title": "Kaufpreis aus Eigenkapital berechnen",
+            "description": "20.000€ EK → 200.000€ Wohnung (10%), Faktor 10 Regel"
+          },
+          {
+            "id": "freundinnen-investment",
+            "title": "Freundinnen-Investment",
+            "description": "Gemeinsam größere Immobilien leisten, 'auf Freundinnen ist Verlass'"
+          },
+          {
+            "id": "for-a-rainy-day-strategie",
+            "title": "'For a rainy day' Strategie",
+            "description": "10% einsetzen + 5-10% Reserve behalten, ruhig schlafen können"
+          },
+          {
+            "id": "erwerbsnebenkosten-deckung",
+            "title": "Erwerbsnebenkosten-Deckung",
+            "description": "Makler, Notar, Grunderwerbsteuer, Gebühren aus Eigenkapital"
+          },
+          {
+            "id": "investition-vs-eigennutz",
+            "title": "Kapitalanlage vs. Eigennutzung",
+            "description": "Strategische Entscheidung: Investment oder Eigenheim"
+          },
+          {
+            "id": "risikoprofil",
+            "title": "Risikoprofil bestimmen",
+            "description": "Risikofreudigkeit einschätzen und Finanzierungsquote wählen"
+          }
+        ]
+      },
+      {
+        "id": "kennzahlen",
+        "title": "Kennzahlen & Bewertung",
+        "description": "Wichtige Metriken zur Immobilienbewertung",
+        "pages": [
+          {
+            "id": "mietrendite",
+            "title": "Mietrendite",
+            "description": "Brutto- und Nettorendite berechnen (Zielwert: mindestens 3%)"
+          },
+          {
+            "id": "bruttomietrendite",
+            "title": "Bruttomietrendite",
+            "description": "Jahresmiete geteilt durch Kaufpreis - schnelle Übersichtsberechnung ohne Kosten"
+          },
+          {
+            "id": "nettomietrendite",
+            "title": "Nettomietrendite",
+            "description": "Mietrendite nach Abzug aller laufenden Kosten - realistische Bewertung"
+          },
+          {
+            "id": "einkaufsfaktor",
+            "title": "Einkaufsfaktor",
+            "description": "Kaufpreis geteilt durch Jahresnettokaltmiete (Zielwert: unter 30)"
+          },
+          {
+            "id": "vervielfaeltiger",
+            "title": "Vervielfältiger",
+            "description": "Kaufpreis geteilt durch Jahresnettokaltmiete - Kehrwert der Bruttorendite"
+          },
+          {
+            "id": "cash-on-cash-rendite",
+            "title": "Cash-on-Cash Rendite",
+            "description": "Jährlicher Cashflow nach Steuern geteilt durch eingesetztes Eigenkapital"
+          },
+          {
+            "id": "cashflow",
+            "title": "Cashflow",
+            "description": "Monatlicher Überschuss: Einnahmen minus alle Kosten"
+          },
+          {
+            "id": "kapitalisierungszinssatz",
+            "title": "Kapitalisierungszinssatz",
+            "description": "Nettorendite einer Immobilie - Maß für die Verzinsung des eingesetzten Kapitals"
+          },
+          {
+            "id": "discounted-cash-flow",
+            "title": "Discounted Cash Flow (DCF)",
+            "description": "Barwertverfahren zur Bewertung künftiger Cashflows unter Berücksichtigung des Zinssatzes"
+          },
+          {
+            "id": "debt-service-coverage-ratio",
+            "title": "Debt Service Coverage Ratio (DSCR)",
+            "description": "Verhältnis zwischen verfügbarem Cashflow und Schuldendienst - Finanzierungssicherheit bewerten"
+          },
+          {
+            "id": "loan-to-value-ratio",
+            "title": "Loan-to-Value Ratio (LTV)",
+            "description": "Kreditbetrag im Verhältnis zum Immobilienwert - Beleihungsgrad der Finanzierung"
+          },
+          {
+            "id": "debt-to-equity-ratio",
+            "title": "Debt-to-Equity Ratio",
+            "description": "Verhältnis von Fremdkapital zu Eigenkapital - Verschuldungsgrad analysieren"
+          },
+          {
+            "id": "quadratmeterpreise",
+            "title": "Quadratmeterpreise",
+            "description": "Marktpreise analysieren und Vergleichswerte ermitteln"
+          },
+          {
+            "id": "kaufpreis-pro-qm",
+            "title": "Kaufpreis pro Quadratmeter",
+            "description": "Kaufpreis geteilt durch Wohnfläche - Preisvergleich verschiedener Objekte"
+          },
+          {
+            "id": "miete-pro-qm",
+            "title": "Miete pro Quadratmeter",
+            "description": "Nettokaltmiete geteilt durch Wohnfläche - Mietpreisniveau bewerten"
+          },
+          {
+            "id": "mietpreis-kaufpreis-relation",
+            "title": "Mietpreis-Kaufpreis-Relation",
+            "description": "Verhältnis zwischen Quadratmetermiete und Quadratmeterkaufpreis"
+          },
+          {
+            "id": "mietsteigerungspotenzial",
+            "title": "Mietsteigerungspotenzial",
+            "description": "Potenzial zur Mieterhöhung bei Neuvermietung bewerten"
+          },
+          {
+            "id": "marktmiete-vs-istmiete",
+            "title": "Marktmiete vs. Istmiete",
+            "description": "Vergleich der aktuellen Miete mit der ortsüblichen Vergleichsmiete"
+          },
+          {
+            "id": "mietausfallwagnis",
+            "title": "Mietausfallwagnis",
+            "description": "Wahrscheinlichkeit und Höhe von Mietausfällen - typisch 2-5% der Jahresmiete"
+          },
+          {
+            "id": "leerstandsquote",
+            "title": "Leerstandsquote",
+            "description": "Anteil der nicht vermieteten Fläche - Marktindikator für Vermietbarkeit"
+          },
+          {
+            "id": "instandhaltungskosten-pro-qm",
+            "title": "Instandhaltungskosten pro qm",
+            "description": "Jährliche Rückstellungen für Reparaturen - typisch 8-15€ pro qm Wohnfläche"
+          },
+          {
+            "id": "verwaltungskosten-pro-einheit",
+            "title": "Verwaltungskosten pro Einheit",
+            "description": "Jährliche Kosten für Hausverwaltung - typisch 200-500€ pro Wohnung"
+          },
+          {
+            "id": "hausgeld-pro-qm",
+            "title": "Hausgeld pro Quadratmeter",
+            "description": "Monatliche Hausgeldkosten geteilt durch Wohnfläche - Vergleichswert für Nebenkosten"
+          },
+          {
+            "id": "eigenkapitalrendite",
+            "title": "Eigenkapitalrendite",
+            "description": "Rendite des eingesetzten Eigenkapitals nach Berücksichtigung der Fremdfinanzierung"
+          },
+          {
+            "id": "gesamtkapitalrendite",
+            "title": "Gesamtkapitalrendite",
+            "description": "Rendite auf das gesamte investierte Kapital (Eigen- und Fremdkapital)"
+          },
+          {
+            "id": "internal-rate-of-return",
+            "title": "Internal Rate of Return (IRR)",
+            "description": "Interner Zinsfuß - Rendite bei der der Barwert aller Cashflows null ergibt"
+          },
+          {
+            "id": "payback-period",
+            "title": "Payback Period",
+            "description": "Amortisationszeit - Zeitraum bis zur Rückgewinnung des investierten Eigenkapitals"
+          },
+          {
+            "id": "break-even-point",
+            "title": "Break-Even-Point",
+            "description": "Punkt bei dem Einnahmen und Ausgaben ausgeglichen sind - neutraler Cashflow"
+          },
+          {
+            "id": "verkehrswert-marktwert",
+            "title": "Verkehrswert / Marktwert",
+            "description": "Objektiver Wert einer Immobilie am Markt - Basis für Finanzierung und Bewertung"
+          },
+          {
+            "id": "beleihungswert",
+            "title": "Beleihungswert",
+            "description": "Konservativer Wert für Bankfinanzierung - meist 80-90% des Verkehrswerts"
+          },
+          {
+            "id": "sachwertverfahren",
+            "title": "Sachwertverfahren",
+            "description": "Bewertungsmethode basierend auf Herstellungskosten abzüglich Abnutzung"
+          },
+          {
+            "id": "ertragswertverfahren",
+            "title": "Ertragswertverfahren",
+            "description": "Bewertung basierend auf erzielbaren Mieteinnahmen und Kapitalisierungszinssatz"
+          },
+          {
+            "id": "vergleichswertverfahren",
+            "title": "Vergleichswertverfahren",
+            "description": "Bewertung durch Vergleich mit ähnlichen, kürzlich verkauften Immobilien"
+          },
+          {
+            "id": "bodenrichtwert",
+            "title": "Bodenrichtwert",
+            "description": "Durchschnittlicher Wert für Bauland in einem Gebiet - amtliche Bewertungsgrundlage"
+          },
+          {
+            "id": "grundstuecksflaechenfaktor",
+            "title": "Grundstücksflächenfaktor",
+            "description": "Verhältnis zwischen Wohn- und Grundstücksfläche - Flächeneffizienz bewerten"
+          },
+          {
+            "id": "geschossflächenzahl",
+            "title": "Geschossflächenzahl (GFZ)",
+            "description": "Verhältnis zwischen Geschossfläche und Grundstücksfläche - bauliche Ausnutzung"
+          },
+          {
+            "id": "grundflächenzahl",
+            "title": "Grundflächenzahl (GRZ)",
+            "description": "Anteil des überbaubaren Grundstücks - maximale Bebauungsdichte"
+          },
+          {
+            "id": "nutzungskoeffizient",
+            "title": "Nutzungskoeffizient",
+            "description": "Verhältnis zwischen vermietbarer und Gesamtfläche - Flächeneffizienz bewerten"
+          },
+          {
+            "id": "betriebskosten-quote",
+            "title": "Betriebskosten-Quote",
+            "description": "Anteil der Betriebskosten an den Gesamtmieteinnahmen - Kosteneffizienz bewerten"
+          },
+          {
+            "id": "heizkosten-pro-qm",
+            "title": "Heizkosten pro Quadratmeter",
+            "description": "Jährliche Heizkosten geteilt durch Wohnfläche - Energieeffizienz bewerten"
+          },
+          {
+            "id": "energiekennwert",
+            "title": "Energiekennwert",
+            "description": "Energieverbrauch pro Quadratmeter und Jahr - wichtig für Nebenkosten und Nachhaltigkeit"
+          },
+          {
+            "id": "modernisierungsrueckstand",
+            "title": "Modernisierungsrückstand",
+            "description": "Geschätzte Kosten für notwendige Modernisierungsmaßnahmen"
+          },
+          {
+            "id": "restnutzungsdauer",
+            "title": "Restnutzungsdauer",
+            "description": "Verbleibende wirtschaftliche Nutzungsdauer einer Immobilie oder deren Komponenten"
+          },
+          {
+            "id": "fluktuationsrate",
+            "title": "Fluktuationsrate",
+            "description": "Häufigkeit des Mieterwechsels - Indikator für Vermietungsqualität und Kosten"
+          },
+          {
+            "id": "mietpreisbremse-auswirkung",
+            "title": "Mietpreisbremse-Auswirkung",
+            "description": "Beschränkung der Miethöhe in angespannten Wohnungsmärkten - Renditeauswirkung bewerten"
+          },
+          {
+            "id": "indexmiete-mechanismus",
+            "title": "Indexmiete-Mechanismus",
+            "description": "Mietanpassung basierend auf Verbraucherpreisindex - inflationsgeschützte Mieteinnahmen"
+          },
+          {
+            "id": "staffelmiete-entwicklung",
+            "title": "Staffelmiete-Entwicklung",
+            "description": "Vereinbarte Mietsteigerungen zu festgelegten Zeitpunkten - Planbarkeit der Einnahmen"
+          },
+          {
+            "id": "kennzahlen-bewertung",
+            "title": "Kennzahlen richtig interpretieren",
+            "description": "Wann sind Kennzahlen gut und was bedeuten die Zielwerte"
+          },
+          {
+            "id": "kennzahlen-benchmarking",
+            "title": "Kennzahlen-Benchmarking",
+            "description": "Vergleich der Objektkennzahlen mit Marktdurchschnitt und Best Practice"
+          },
+          {
+            "id": "risikokennzahlen",
+            "title": "Risikokennzahlen",
+            "description": "Messgrößen zur Bewertung verschiedener Investitionsrisiken (Markt-, Objekt-, Finanzierungsrisiko)"
+          }
+        ]
+      },
+      {
+        "id": "finanzierung",
+        "title": "Finanzierung",
+        "description": "Alles rund um die Immobilienfinanzierung",
+        "pages": [
+          {
+            "id": "zins-und-tilgung",
+            "title": "Zins und Tilgung",
+            "description": "Annuitätendarlehen, Zinsbindung und Tilgungsverläufe verstehen"
+          },
+          {
+            "id": "kreditwuerdigkeit-voraussetzungen",
+            "title": "Kreditwürdigkeit-Voraussetzungen",
+            "description": "2.000€ netto oder 500€ Überschuss, Schufa sauber, guter Bankeindruck"
+          },
+          {
+            "id": "kreditwuerdigkeit-staerken",
+            "title": "Kreditwürdigkeit stärken",
+            "description": "Eltern/Partner-Haftung, Freundinnen-Kauf, Kundenbescheinigungen"
+          },
+          {
+            "id": "finanzierung-im-alter",
+            "title": "Finanzierung ab 50-60 Jahren",
+            "description": "Schwierigkeiten und Lösungen: Kinder einbeziehen, Rentenpläne"
+          },
+          {
+            "id": "selbststaendige-finanzierung",
+            "title": "Selbstständige Finanzierung",
+            "description": "BWA, Bilanz, Risikoaufschlag, aber machbar - Hausbank ansprechen"
+          },
+          {
+            "id": "finanzierungsschritte",
+            "title": "6 Schritte zur Immobilienfinanzierung",
+            "description": "Von der Vorbereitung bis zum Closing - strukturierter Finanzierungsprozess"
+          },
+          {
+            "id": "finanzierungsunterlagen",
+            "title": "Finanzierungsunterlagen vorbereiten",
+            "description": "Objektblatt erstellen, strukturiert nummerieren, professioneller E-Mail-Verkehr"
+          },
+          {
+            "id": "unterlagen-selbststaendige",
+            "title": "Unterlagen für Selbstständige",
+            "description": "BWA, Bilanz, EÜR, Steuerbescheide - 3-5 Jahre Stabilität nachweisen"
+          },
+          {
+            "id": "finanzierungsvermittler",
+            "title": "Finanzierungsvermittler vs. Direktbanken",
+            "description": "Interhyp, Dr. Klein vs. Hausbank - Vor-/Nachteile, Empfehlungen einholen"
+          },
+          {
+            "id": "angebote-vergleichen",
+            "title": "Angebote systematisch vergleichen",
+            "description": "Nominal- vs. Effektivzinssatz, 7 Fragen zur Bankauswahl"
+          },
+          {
+            "id": "verhandlungstaktiken",
+            "title": "Verhandlungstaktiken mit Banken",
+            "description": "Konkurrenzangebote nutzen, 'Good Girl' Strategie, Schmerzgrenze finden"
+          },
+          {
+            "id": "finanzierungsentscheidung",
+            "title": "Bankentscheidung verstehen",
+            "description": "Was passiert hinter den Kulissen: Bewertung, Risikoabteilung, Verhandlung"
+          },
+          {
+            "id": "kreditvertrag-aufbau",
+            "title": "Kreditvertrag-Aufbau verstehen",
+            "description": "Darlehensnehmer, Beleihungsobjekt, BaFin-Aufsicht, Konditionen"
+          },
+          {
+            "id": "kreditvertrag-konditionen",
+            "title": "Kreditvertrag-Konditionen",
+            "description": "Nominal- vs. Effektivzins, Zinsbindung, Tilgung, Laufzeit"
+          },
+          {
+            "id": "sondertilgung",
+            "title": "Sondertilgung richtig nutzen",
+            "description": "Bis 5% jährlich, Recht ohne Verpflichtung, verfällt jährlich"
+          },
+          {
+            "id": "10-jahres-kuendigungsrecht",
+            "title": "10-Jahres-Kündigungsrecht",
+            "description": "Nach 10 Jahren ohne Vorfälligkeitsentschädigung kündbar (6 Monate Frist)"
+          },
+          {
+            "id": "widerrufsrecht-14-tage",
+            "title": "14-Tage-Widerrufsrecht",
+            "description": "Wichtig wenn Kaufvertrag platzt - sofort widerrufen!"
+          },
+          {
+            "id": "bereitstellungszinsen",
+            "title": "Bereitstellungszinsen",
+            "description": "Kosten bei verzögertem Kreditabruf (nach 3-4 Monaten)"
+          },
+          {
+            "id": "vorfaelligkeitsentschaedigung",
+            "title": "Vorfälligkeitsentschädigung",
+            "description": "Kosten bei vorzeitiger Kreditkündigung und 10-Jahres-Kündigungsrecht"
+          },
+          {
+            "id": "grundschuld",
+            "title": "Grundschuld als Sicherheit",
+            "description": "Wie die Grundschuld funktioniert und im Grundbuch eingetragen wird"
+          },
+          {
+            "id": "zinsentwicklung",
+            "title": "Zinsentwicklung verstehen",
+            "description": "EZB-Politik, Leitzins und Prognosen für Bauzinsen"
+          },
+          {
+            "id": "marktlage-2023",
+            "title": "Marktlage 2023: Steigende Zinsen",
+            "description": "Zinsen vervierfacht auf 3,5-4%, EZB-Leitzins 3%, neue Strategien"
+          },
+          {
+            "id": "eigenkapital-anforderungen-2023",
+            "title": "Eigenkapital-Anforderungen 2023",
+            "description": "Banken fordern 20-30% statt 100%-Finanzierung, BaFin-Kapitalpuffer"
+          },
+          {
+            "id": "investmentstrategien-hochzinsphase",
+            "title": "Investment-Strategien Hochzinsphase",
+            "description": "5-6% Mietrendite anstreben, 25% Verhandlungspotenzial, Speckgürtel"
+          },
+          {
+            "id": "chancen-in-zinsanstiegen",
+            "title": "Chancen in Zinsanstiegen erkennen",
+            "description": "Preisrückgänge nutzen, Projektentwickler-Notverkäufe, Energieeffizienz"
+          },
+          {
+            "id": "tilgen-statt-mieten",
+            "title": "'Tilgen statt Mieten' Philosophie",
+            "description": "Langfristige Vermögensbildung vs. lebenslange Mietzahlungen"
+          },
+          {
+            "id": "hebeleffekt-immobilien",
+            "title": "Hebeleffekt bei Immobilien",
+            "description": "Aus 20.000€ werden 100.000€ - Leverage richtig nutzen"
+          },
+          {
+            "id": "finanzierung-selbststaendige",
+            "title": "Finanzierung für Selbstständige",
+            "description": "Besondere Anforderungen, BWA, Risikoaufschlag und Strategien"
+          },
+          {
+            "id": "finanzierung-im-alter",
+            "title": "Finanzierung ab 50+",
+            "description": "Herausforderungen und Lösungen für ältere Kreditnehmer"
+          }
+        ]
+      },
+      {
+        "id": "suche-und-bewertung",
+        "title": "Suche & Bewertung",
+        "description": "Immobilien finden und erste Bewertung",
+        "pages": [
+          {
+            "id": "suchprofil-erstellen",
+            "title": "Suchprofil systematisch erstellen",
+            "description": "Nutzung, Max 250.000€, bis 80qm, 1-3 Zimmer, ÖPNV-Anbindung definieren"
+          },
+          {
+            "id": "suchprofil-vorlage",
+            "title": "Happy Immo Suchprofil-Vorlage",
+            "description": "Gelbe Felder ausfüllen: Kapitalanlage vs. Eigennutz, Sanierungspotenzial"
+          },
+          {
+            "id": "nutzungsarten",
+            "title": "Kapitalanlage vs. Eigennutzung",
+            "description": "Strategische Entscheidung: Investment oder Eigenheim"
+          },
+          {
+            "id": "off-market-deals",
+            "title": "Off-Market Deals finden",
+            "description": "Freunde & Bekannte aktivieren, Handwerker-Netzwerk, günstiger ohne Makler"
+          },
+          {
+            "id": "aushaenge-schwarzes-brett",
+            "title": "Aushänge & Schwarze Bretter",
+            "description": "Uni, Supermarkt, Co-Working Spaces - eigene Gesuche aufhängen"
+          },
+          {
+            "id": "makler-netzwerk",
+            "title": "Makler-Netzwerk aufbauen",
+            "description": "Verteiler, wiederkehrende Kunden bevorzugt, Liste erstellen und abklappern"
+          },
+          {
+            "id": "suchportale-erweitert",
+            "title": "Suchportale systematisch nutzen",
+            "description": "ImmoScout Plus-Version, eBay Kleinanzeigen, Immowelt, Imonet, regelmäßige E-Mail-Alerts"
+          },
+          {
+            "id": "meta-suchmaschinen",
+            "title": "Meta-Suchmaschinen",
+            "description": "ThinkImmo, Immetrik - alle Portale gleichzeitig durchsuchen, über 3% Filter"
+          },
+          {
+            "id": "zwangsversteigerungen",
+            "title": "Zwangsversteigerungen",
+            "description": "ZVG-Portal und Chancen bei Zwangsversteigerungen"
+          },
+          {
+            "id": "bierdeckelrechnung-durchfuehren",
+            "title": "Bierdeckelrechnung durchführen",
+            "description": "3-Minuten-Bewertung: Kaufpreis ÷ Netto-Kaltmiete, Ziel >3% Mietrendite"
+          },
+          {
+            "id": "einkaufsfaktor-berechnen",
+            "title": "Einkaufsfaktor berechnen",
+            "description": "Kaufpreis ÷ Jahres-Nettokaltmiete = Faktor unter 30 anstreben"
+          },
+          {
+            "id": "quadratmeterpreis-vergleichen",
+            "title": "Quadratmeterpreis vergleichen",
+            "description": "ImmoScout Preisatlas: 1km Umkreis, ähnliche Größe, vermieteter Zustand"
+          },
+          {
+            "id": "angebote-systematisch-abgeben",
+            "title": "Angebote systematisch abgeben",
+            "description": "Persönliche Story, Familie zeigen, faire Vermietung versprechen"
+          },
+          {
+            "id": "kaufpreis-verhandeln",
+            "title": "Kaufpreis erfolgreich verhandeln",
+            "description": "10-25% Reduktion: 'Bank gibt nicht mehr', 'unter Finanzierungsvorbehalt'"
+          },
+          {
+            "id": "timing-bei-verhandlungen",
+            "title": "Timing bei Verhandlungen",
+            "description": "Nach Besichtigung direkt fragen, dranbleiben nach Absagen"
+          },
+          {
+            "id": "verkauefermotivation-herausfinden",
+            "title": "Verkäufermotivation herausfinden",
+            "description": "Warum Verkauf? Zeitdruck? Erbengemeinschaft? Finanzierungsprobleme?"
+          },
+          {
+            "id": "vermietete-vs-leere-wohnungen",
+            "title": "Vermietet vs. Leerstand",
+            "description": "Vor- und Nachteile vermieteter und leerstehender Wohnungen"
+          },
+          {
+            "id": "konkurrenzsituation",
+            "title": "Konkurrenzsituation bei Besichtigungen",
+            "description": "Mit ca. 10 Interessenten rechnen, schnell zuschlagen bei guten Objekten"
+          }
+        ]
+      },
+      {
+        "id": "lage",
+        "title": "Lage",
+        "description": "Lagefaktoren verstehen und bewerten",
+        "pages": [
+          {
+            "id": "makrolage",
+            "title": "Makrolage",
+            "description": "Bewertung von Region, Stadt und Stadtteil (Verkehrsanbindung, Wirtschaftskraft, Demografie)"
+          },
+          {
+            "id": "mikrolage",
+            "title": "Mikrolage",
+            "description": "Direktes Umfeld der Immobilie bewerten"
+          },
+          {
+            "id": "lagekriterien",
+            "title": "Die 7 wichtigsten Lagekriterien",
+            "description": "Ruhige Lage, Infrastruktur, Verkehrsanbindung, Natur, Arbeitsplatz, Kosten, Zentralität"
+          }
+        ]
+      },
+      {
+        "id": "besichtigung",
+        "title": "Besichtigung",
+        "description": "Professionelle Immobilienbesichtigung",
+        "pages": [
+          {
+            "id": "expose-anfordern-strategien",
+            "title": "Exposé strategisch anfordern",
+            "description": "3 Wege: Plattform-Nachricht, E-Mail, Anruf (am persönlichsten)"
+          },
+          {
+            "id": "eindruck-hinterlassen",
+            "title": "Ersten Eindruck optimal gestalten",
+            "description": "Höflich, sympathisch, verbindlich wirken - jeder will nette Geschäftspartner"
+          },
+          {
+            "id": "anruf-vorbereitung",
+            "title": "Anruf-Vorbereitung professionell",
+            "description": "Alle Infos griffbereit, Fragen bereit, 3 Dokumente anfordern"
+          },
+          {
+            "id": "expose-auswertung",
+            "title": "Exposé richtig lesen",
+            "description": "Wichtige Informationen erkennen und erste Bewertung"
+          },
+          {
+            "id": "drei-schluessel-dokumente",
+            "title": "3 Schlüssel-Dokumente anfordern",
+            "description": "WEG-Protokolle letzte 2, Hausgeldabrechnung letztes Jahr, Wirtschaftsplan aktuell"
+          },
+          {
+            "id": "besichtigung-realitaet",
+            "title": "Besichtigungs-Realität verstehen",
+            "description": "Meist nur 1 Besichtigung möglich, Sammelbesichtigungen in beliebten Lagen"
+          },
+          {
+            "id": "besichtigung-vorbereitung-praktisch",
+            "title": "Besichtigung praktisch vorbereiten",
+            "description": "Handy-Akku sicherstellen, Checkliste mitbringen, fokussiert auf Wesentliches"
+          },
+          {
+            "id": "vier-topthemen-besichtigung",
+            "title": "4 Topthemen der Besichtigung",
+            "description": "Lage vor Ort, Kalkulation überprüfen, Gebäude-Technik, Wohnungs-Technik"
+          },
+          {
+            "id": "lage-vor-ort-bewerten",
+            "title": "Lage vor Ort bewerten",
+            "description": "Geruch, Lärm, Wohlbefinden nach persönlicher Wahrnehmung"
+          },
+          {
+            "id": "gebaude-technik-5-bereiche",
+            "title": "Gebäude-Technik: 5 Bereiche",
+            "description": "Fassade, Fenster, Treppenhaus, Dach, Keller systematisch prüfen"
+          },
+          {
+            "id": "ruecklage-schluesselfrage",
+            "title": "Rücklage-Schlüsselfrage",
+            "description": "'Kann Rücklage anstehende Kosten abdecken?' Wenn nein → Sonderumlagen drohen"
+          },
+          {
+            "id": "miteigentumsanteile-kosten",
+            "title": "Miteigentumsanteile & Kosten",
+            "description": "10 MEA von 100 = 10% der Gemeinschaftskosten tragen"
+          },
+          {
+            "id": "mieter-nachbarn-befragen",
+            "title": "Mieter & Nachbarn systematisch befragen",
+            "description": "Menschen beschweren sich gerne, hoffen auf Mängelbehebung durch neue Eigentümer"
+          },
+          {
+            "id": "videos-bilder-strategie",
+            "title": "Videos & Bilder strategisch machen",
+            "description": "Bei Unsicherheiten: Flecken, Sicherungskasten, Heizkessel - später mit Freunden auswerten"
+          },
+          {
+            "id": "handwerkerin-mitnehmen",
+            "title": "Handwerkerin mitnehmen",
+            "description": "Erste Besichtigungen: Technik-Expertise, nach paar Mal alleine machbar"
+          },
+          {
+            "id": "feuchtigkeitsmessgeraet",
+            "title": "Feuchtigkeitsmessgerät nutzen",
+            "description": "Ab 15€, einfach zu bedienen, Wände objektiv bewerten"
+          },
+          {
+            "id": "bauchgefuehl-besichtigung",
+            "title": "Bauchgefühl ernst nehmen",
+            "description": "'Frauen und Technik geht doch!' - Intuition bei finaler Entscheidung wichtig"
+          },
+          {
+            "id": "vermietbarkeit-bewerten",
+            "title": "Vermietbarkeit systematisch bewerten",
+            "description": "3x Plus (sehr gut) bis 1x Plus (weniger gut), pro Thema Mieter-Wohlfühlfaktor"
+          },
+          {
+            "id": "kosten-nach-besichtigung",
+            "title": "Kosten nach Besichtigung einschätzen",
+            "description": "Happy Immo Vorlage 'voraussichtliche Kosten', einfach bis Luxussanierung"
+          },
+          {
+            "id": "kalkulation-aktualisieren",
+            "title": "Kalkulation mit neuen Infos aktualisieren",
+            "description": "Besichtigungs-Erkenntnisse in Renditeberechnung einarbeiten"
+          },
+          {
+            "id": "email-struktur-nach-besichtigung",
+            "title": "E-Mail-Struktur nach Besichtigung",
+            "description": "1. Dank, 2. Positive Eindrücke, 3. Fragen strukturiert, 4. Fehlende Unterlagen"
+          },
+          {
+            "id": "weg-protokolle-anfordern",
+            "title": "WEG-Protokolle strategisch anfordern",
+            "description": "Letzte 2-3 Eigentümerversammlungen: Technik, Kosten, Gemeinschafts-Dynamik bewerten"
+          },
+          {
+            "id": "gemeinschafts-dynamik-bewerten",
+            "title": "Gemeinschafts-Dynamik bewerten",
+            "description": "Gehen Eigentümer gut miteinander um? Gerichtsverfahren vermeiden"
+          },
+          {
+            "id": "makler-aufgaben-detail",
+            "title": "Makler-Aufgaben im Detail",
+            "description": "Exposé, Unterlagen, Anfragen, Besichtigungen, Angebote, Notar - dann fertig"
+          },
+          {
+            "id": "makler-provision-3-6-prozent",
+            "title": "Makler-Provision: 3-6%",
+            "description": "Hälftig Käufer/Verkäufer, gesetzlich geregelt, bei Kauf zahlen"
+          },
+          {
+            "id": "maklervertrag-ok",
+            "title": "Maklervertrag: OK unterschreiben",
+            "description": "Provision-Sicherung, keine Kosten wenn kein Kauf, Geld für Besichtigung verboten"
+          },
+          {
+            "id": "makler-professionalitaet",
+            "title": "Makler-Professionalität einschätzen",
+            "description": "Berufsbezeichnung nicht geschützt = breites Spektrum an Qualität"
+          },
+          {
+            "id": "sammelbesichtigungen",
+            "title": "Sammelbesichtigungen meistern",
+            "description": "Strategien bei Gruppenbesichtigungen in beliebten Lagen"
+          },
+          {
+            "id": "sammelbesichtigungen-strategien",
+            "title": "Sammelbesichtigungen-Strategien",
+            "description": "Beliebte Lagen: Weniger Zeit, mehr Konkurrenz, effiziente Fragen stellen"
+          },
+          {
+            "id": "finale-kaufentscheidung",
+            "title": "Finale Kaufentscheidung treffen",
+            "description": "Alle Faktoren bewerten: Rendite, Risiken, Bauchgefühl, Gemeinschafts-Dynamik"
+          }
+        ]
+      },
+      {
+        "id": "kalkulation",
+        "title": "Kalkulation",
+        "description": "Vollständige Wirtschaftlichkeitsrechnung",
+        "pages": [
+          {
+            "id": "kalkulation-aufbau",
+            "title": "Kalkulations-Aufbau",
+            "description": "4 Blöcke: Daten & Kennzahlen, Kosten, Einnahmen, Rendite - Happy Immo Kalkulationsvorlage"
+          },
+          {
+            "id": "happy-immo-kalkulation",
+            "title": "Happy Immo Kalkulationsvorlage",
+            "description": "Gelbe Zellen ausfüllen, automatische Berechnung, Erklärungen zu jeder Position"
+          },
+          {
+            "id": "daten-kennzahlen-block",
+            "title": "Daten & Kennzahlen erfassen",
+            "description": "Adresse, Kontaktdaten, Quadratmeter, Kaufpreis, aktuelle/gewünschte Netto-Kaltmiete"
+          },
+          {
+            "id": "wichtige-kennzahlen-kalkulation",
+            "title": "Wichtige Kennzahlen für Kalkulation",
+            "description": "Wohnungsgröße, Kaufpreis, aktuelle Netto-Kaltmiete, Marktmiete, Wohngeld/Hausgeld"
+          },
+          {
+            "id": "kennzahlen-auswertung",
+            "title": "Kennzahlen-Auswertung automatisch",
+            "description": "Kaufpreis/qm, Mietrendite (>3% Ziel), Einkaufsfaktor (<30), Mietsteigerungspotenzial"
+          },
+          {
+            "id": "kennzahlen-bewertungskriterien",
+            "title": "Kennzahlen Bewertungskriterien",
+            "description": "Kaufpreis unter Markt, Mietrendite >3%, Einkaufsfaktor <30, Mietsteigerungspotenzial"
+          },
+          {
+            "id": "investitionskosten",
+            "title": "Investitionskosten",
+            "description": "Kaufpreis + Ankaufsnebenkosten + Sanierung/Umbau"
+          },
+          {
+            "id": "sanierung-umbau-massnahmen",
+            "title": "Sanierung/Umbau-Maßnahmen",
+            "description": "Maßnahmen kurz nach Kauf vs. Renovierung bei Mieterwechsel"
+          },
+          {
+            "id": "massnahmen-bestehendes-mietverhaeltnis",
+            "title": "Maßnahmen bestehendes Mietverhältnis",
+            "description": "Mängel beheben die im laufenden Mietverhältnis nötig sind"
+          },
+          {
+            "id": "massnahmen-bei-mieterwechsel",
+            "title": "Maßnahmen bei Mieterwechsel",
+            "description": "Neues Bad, Parkettboden für höhere Miete - Potenzial nutzen"
+          },
+          {
+            "id": "kostenvoranschlag-handwerker",
+            "title": "Kostenvoranschlag Handwerker",
+            "description": "Vertrauenshandwerker einbeziehen und Kosten kalkulieren"
+          },
+          {
+            "id": "kostenstruktur-ueberblick",
+            "title": "Kostenstruktur Überblick",
+            "description": "Investitionskosten und laufende Kosten - zwei Hauptkategorien"
+          },
+          {
+            "id": "ankaufsnebenkosten",
+            "title": "Ankaufsnebenkosten im Detail",
+            "description": "Makler (3%), Grunderwerbsteuer (3,5-6,5%), Notar/Grundbuch (1,5%)"
+          },
+          {
+            "id": "bestellerprinzip-makler",
+            "title": "Bestellerprinzip Maklergebühr",
+            "description": "Seit 12/2020: 50/50 Aufteilung Käufer/Verkäufer bei Privatpersonen"
+          },
+          {
+            "id": "maklergebuehr-verhandlung",
+            "title": "Maklergebühr Verhandlung",
+            "description": "Runterhandeln = doppelter Verlust für Makler (Käufer + Verkäufer Anteil)"
+          },
+          {
+            "id": "grunderwerbsteuer-bundeslaender",
+            "title": "Grunderwerbsteuer nach Bundesländern",
+            "description": "3,5% (Bayern) bis 6,5% (Berlin, Hessen), nicht auf Einrichtung"
+          },
+          {
+            "id": "grunderwerbsteuer-sparen",
+            "title": "Grunderwerbsteuer sparen",
+            "description": "Einrichtung separat ausweisen (Küche im Kaufvertrag), keine Steuer auf Mobiliar"
+          },
+          {
+            "id": "notar-grundbuchkosten-detail",
+            "title": "Notar- und Grundbuchkosten Detail",
+            "description": "Ca. 1,5% Kaufpreis: 1% Notar + 0,5% Grundbuch nach GNotKG"
+          },
+          {
+            "id": "anschaffungskosten-summe",
+            "title": "Anschaffungskosten Gesamtsumme",
+            "description": "8-14% auf Kaufpreis: Makler + Grunderwerbsteuer + Notar/Grundbuch"
+          },
+          {
+            "id": "finanzierungskosten-detail",
+            "title": "Finanzierungskosten berechnen",
+            "description": "Zinsen vs. Tilgung, Annuitätendarlehen verstehen"
+          },
+          {
+            "id": "zinsen-vs-tilgung",
+            "title": "Zinsen vs. Tilgung verstehen",
+            "description": "Zinsen = echte Ausgaben, Tilgung = Vermögensaufbau (gehört dir)"
+          },
+          {
+            "id": "annuitaetendarlehen-aufbau",
+            "title": "Annuitätendarlehen Aufbau",
+            "description": "Gleiche Rate: anfangs mehr Zinsen, später mehr Tilgung"
+          },
+          {
+            "id": "kalkulation-zins-tilgung",
+            "title": "Zins + Tilgung in Kalkulation",
+            "description": "Beide Kosten berücksichtigen für selbsttragende Immobilie"
+          },
+          {
+            "id": "laufende-kosten-detail",
+            "title": "Laufende Kosten verstehen",
+            "description": "Hausgeld/Wohngeld, umlagefähige vs. nicht umlagefähige Kosten"
+          },
+          {
+            "id": "begriffsklaerung-hausgeld",
+            "title": "Begriffserklärung Hausgeld/Wohngeld",
+            "description": "Hausgeld = Wohngeld = Vorauszahlung für Hausnebenkosten an Verwaltung"
+          },
+          {
+            "id": "nebenkosten-vorauszahlung",
+            "title": "Nebenkosten-Vorauszahlung Mieter",
+            "description": "Mieter zahlt Vorauszahlung für umlagefähige Nebenkosten"
+          },
+          {
+            "id": "umlagefaehige-kosten-liste",
+            "title": "Umlagefähige Kosten Liste",
+            "description": "Strom, Wasser, Warmwasser, Heizung - Mieter zahlt zurück"
+          },
+          {
+            "id": "nicht-umlagefaehige-kosten-liste",
+            "title": "Nicht umlagefähige Kosten Liste",
+            "description": "Instandhaltung, Instandsetzung, Verwaltung - Vermieter trägt selbst"
+          },
+          {
+            "id": "nebenkostenpauschale-vs-vorauszahlung",
+            "title": "Nebenkostenpauschale vs. Vorauszahlung",
+            "description": "Pauschale: kein Nachfordern, Vorauszahlung: Nachzahlung/Rückerstattung möglich"
+          },
+          {
+            "id": "nicht-umlagefaehige-kosten-ermittlung",
+            "title": "Nicht umlagefähige Kosten ermitteln",
+            "description": "Wirtschaftsplan/Hausgeldabrechnung prüfen, meist als 'nicht umlagefähig' markiert"
+          },
+          {
+            "id": "nicht-umlagefahige-kosten",
+            "title": "Nicht umlagefähige Kosten",
+            "description": "Instandhaltung, Verwaltung - Was Sie selbst tragen müssen"
+          },
+          {
+            "id": "ruecklagen-detail",
+            "title": "Rücklagen richtig planen",
+            "description": "10€/qm/Jahr + 3% Mietausfall für Deutschland"
+          },
+          {
+            "id": "ruecklagen-zweck",
+            "title": "Rücklagen Zweck",
+            "description": "Persönliche Rücklagen für Reparaturen (Heizung, Fenster), nicht WEG-Rücklagen"
+          },
+          {
+            "id": "ruecklagen-berechnung",
+            "title": "Rücklagen Berechnung",
+            "description": "10€ pro qm Wohnfläche pro Jahr für Instandhaltung"
+          },
+          {
+            "id": "mietausfall-ruecklagen",
+            "title": "Mietausfall-Rücklagen",
+            "description": "3% der Miete für Leerstände zwischen Mieterwechseln (Deutschland-Durchschnitt)"
+          },
+          {
+            "id": "umsatzsteuer-berechnung",
+            "title": "Umsatzsteuer bei Immobilien",
+            "description": "19% auf Notar, nicht umlagefähige Kosten, Sanierung"
+          },
+          {
+            "id": "umsatzsteuer-anwendung",
+            "title": "Umsatzsteuer Anwendung",
+            "description": "19% auf Waren/Dienstleistungen bei Privatpersonen als Käufer"
+          },
+          {
+            "id": "umsatzsteuer-positionen",
+            "title": "Umsatzsteuer-pflichtige Positionen",
+            "description": "Notargebühren, nicht umlagefähige Kosten, Rücklagen, Sanierung/Umbau"
+          },
+          {
+            "id": "mieteinnahmen-berechnung",
+            "title": "Mieteinnahmen optimieren",
+            "description": "Netto-Kaltmiete festlegen, Markt vs. Mietspiegel"
+          },
+          {
+            "id": "netto-kaltmiete-festlegung",
+            "title": "Netto-Kaltmiete festlegen",
+            "description": "Abwägen zwischen eigenen Interessen und Marktgegebenheiten"
+          },
+          {
+            "id": "miete-marktbestimmung",
+            "title": "Miete durch Markt bestimmt",
+            "description": "Angebot und Nachfrage, regionale Unterschiede (Brandenburg vs. Berlin Mitte)"
+          },
+          {
+            "id": "staatliche-mietinstrumente",
+            "title": "Staatliche Mietinstrumente",
+            "description": "Mietspiegel und Mieterhöhungsverfahren als Orientierung"
+          },
+          {
+            "id": "steuerberechnung",
+            "title": "Steuerberechnung verstehen",
+            "description": "Werbungskosten, Abschreibungen (2-3% auf 75% Gebäudewert)"
+          },
+          {
+            "id": "werbungskosten-immobilien",
+            "title": "Werbungskosten bei Immobilien",
+            "description": "Grundsteuer, Zinsen, Kontoführung, Erhaltungsaufwand, Werbung, Nebenkosten, Anwaltskosten"
+          },
+          {
+            "id": "abschreibungen-immobilien",
+            "title": "Abschreibungen bei Immobilien",
+            "description": "2-3% p.a. auf 75% Kaufpreis (Gebäude) + 100% Anschaffungskosten"
+          },
+          {
+            "id": "gewinn-vor-steuern-berechnung",
+            "title": "Gewinn vor Steuern berechnen",
+            "description": "Ergebnis vor Steuern + Tilgung - Werbungskosten - Abschreibungen"
+          },
+          {
+            "id": "steuersatz-anwendung",
+            "title": "Steuersatz anwenden",
+            "description": "Persönlicher Steuersatz auf positiven Gewinn, bei Verlust: Einkommensteuer-Ersparnis"
+          },
+          {
+            "id": "cash-gewinn-nach-steuern",
+            "title": "Cash-Gewinn nach Steuern",
+            "description": "Finales Ergebnis: Was nach Steuern übrig bleibt"
+          },
+          {
+            "id": "cash-on-cash-rendite",
+            "title": "Cash-on-Cash Rendite",
+            "description": "Was nach Steuern auf Ihr Eigenkapital übrig bleibt"
+          },
+          {
+            "id": "monatlicher-cashflow",
+            "title": "Monatlicher Cashflow",
+            "description": "Geld das monatlich in die Tasche fließt nach allen Kosten"
+          },
+          {
+            "id": "zwei-bewertungsarten",
+            "title": "Zwei Bewertungsarten der Immobilie",
+            "description": "1. Behalten als Rente, 2. Verkaufen nach Abbezahlung"
+          },
+          {
+            "id": "positive-rendite-ziel",
+            "title": "Positive Rendite ohne Verkaufsgewinn",
+            "description": "Wichtig: Wohnung trägt sich selbst und generiert zusätzliche Rente"
+          },
+          {
+            "id": "investitionsentscheidung",
+            "title": "Investitionsentscheidung treffen",
+            "description": "Wann lohnt sich der Kauf? Grün vs. Rot-Licht-Kriterien"
+          },
+          {
+            "id": "investition-lohnt-sich-kriterium",
+            "title": "Investition lohnt sich Kriterium",
+            "description": "Cash-on-Cash ≥ 0€: Wohnung bezahlt sich selbst ab und generiert Rente"
+          },
+          {
+            "id": "happy-immo-top3-investitionsgruende",
+            "title": "Happy Immo Top 3 Investitionsgründe",
+            "description": "1. Selbsttragende Wohnung, 2. Mieterhöhungspotenzial, 3. Kaufpreis unter Marktwert"
+          },
+          {
+            "id": "gruenes-vs-rotes-licht",
+            "title": "Grünes vs. Rotes Licht",
+            "description": "Grün: positive Rendite → kaufen, Rot: negative Rendite → verzichten (erste Immobilie)"
+          },
+          {
+            "id": "mieterhohungspotenzial",
+            "title": "Mieterhöhungspotenzial bewerten",
+            "description": "15% bei Neuvermietung, 6%+ Rendite-Potenzial"
+          },
+          {
+            "id": "verkehrswert-vs-kaufpreis",
+            "title": "Verkehrswert vs. Kaufpreis",
+            "description": "Unter Marktwert kaufen für künftige Refinanzierung"
+          }
+        ]
+      },
+      {
+        "id": "dokumente",
+        "title": "Dokumente",
+        "description": "Wichtige Immobiliendokumente verstehen",
+        "pages": [
+          {
+            "id": "dokumente-prioritaeten",
+            "title": "Dokumente-Prioritäten",
+            "description": "Prio 1 vs. Prio 2 Dokumente - Was ist wann wichtig?"
+          },
+          {
+            "id": "dokumenten-uebersicht-happy-immo",
+            "title": "Happy Immo Dokumenten-Übersicht",
+            "description": "Strukturierter Wegweiser durch alle wichtigen Immobiliendokumente"
+          },
+          {
+            "id": "dokumente-zeitaufwand",
+            "title": "Dokumentenprüfung Zeitaufwand",
+            "description": "Je mehr Dokumente geprüft, desto schneller wird es - nicht alles auf einmal anfordern"
+          },
+          {
+            "id": "prio-1-dokumente-liste",
+            "title": "Prio 1 Dokumente Liste",
+            "description": "Exposé, Grundriss, Mietvertrag, Flurkarte, Grundbuch, Hausgeldabrechnung, Wirtschaftsplan, WEG-Protokolle"
+          },
+          {
+            "id": "expose-analyse",
+            "title": "Exposé richtig analysieren",
+            "description": "Bierdeckelrechnung durchführen, Mantra 'Lage, Lage, Lage'"
+          },
+          {
+            "id": "expose-7-punkte",
+            "title": "Die 7 wichtigsten Exposé-Punkte",
+            "description": "Adresse, Kaufpreis, Mieteinnahmen, Größe, Zimmer, Hausgeld, Maklerprovision"
+          },
+          {
+            "id": "expose-erstinformationen",
+            "title": "Exposé Erstinformationen",
+            "description": "Alle wichtigen Infos für erste Bierdeckelrechnung und Interessensprüfung"
+          },
+          {
+            "id": "expose-lage-mantra",
+            "title": "Lage-Mantra bei Exposé-Prüfung",
+            "description": "'Lage, Lage, Lage' - wichtigster Faktor beim Immobilienkauf"
+          },
+          {
+            "id": "expose-budget-pruefung",
+            "title": "Budget-Prüfung anhand Exposé",
+            "description": "Passt Wohnung ins Budget? Trägt sich selbst oder Zuzahlung nötig?"
+          },
+          {
+            "id": "expose-zielgruppen-analyse",
+            "title": "Zielgruppen-Analyse im Exposé",
+            "description": "WG (größere Küche, 2+ Schlafzimmer) vs. Familie vs. Eigennutzung"
+          },
+          {
+            "id": "grundriss-bewertung",
+            "title": "Grundriss bewerten",
+            "description": "Nutzungsarten: Einzelperson, Familie, WG - Aufteilungsoptimierung"
+          },
+          {
+            "id": "grundriss-optimierung",
+            "title": "Grundriss-Optimierungspotenzial",
+            "description": "Benzstraße-Beispiel: Durchbruch Küche → Terrasse, Wohnwert steigern"
+          },
+          {
+            "id": "grundriss-vermietbarkeit",
+            "title": "Grundriss Vermietbarkeit prüfen",
+            "description": "Würden Sie/potenzielle Mieter gern dort wohnen? Optimierungspotenzial erkennen"
+          },
+          {
+            "id": "mietvertrag-analyse",
+            "title": "Mietvertrag-Analyse",
+            "description": "7 Happy-Immo-Punkte: Miethöhe, Erhöhungen, Ausstattung, Reparaturen, Übergabe, Nebenkosten"
+          },
+          {
+            "id": "mietvertrag-7-punkte-detail",
+            "title": "Mietvertrag 7 wichtigste Punkte",
+            "description": "Netto-Kaltmiete, Mieterhöhung, mitgemietete Ausstattung, Reparaturkosten, Zustand bei Auszug, Nebenkosten"
+          },
+          {
+            "id": "mietvertrag-uebernahme",
+            "title": "Mietvertrag-Übernahme bei Kauf",
+            "description": "Bestehender Vertrag + Mieter werden übernommen, genau prüfen wichtig"
+          },
+          {
+            "id": "eigenbedarf-kuendigung-schwierigkeiten",
+            "title": "Eigenbedarfskündigung Schwierigkeiten",
+            "description": "Nur bei Selbsteinzug möglich, Neubau-Sperre 10 Jahre, sehr schwer durchsetzbar"
+          },
+          {
+            "id": "mieterhohung-15-20-prozent",
+            "title": "Mieterhöhung 15-20% alle 3 Jahre",
+            "description": "Gesetzlicher Rahmen bis Mietspiegel, nach Erhöhung 3 Jahre warten"
+          },
+          {
+            "id": "inflation-mietanpassung",
+            "title": "Inflation und Mietanpassung",
+            "description": "2% pro Jahr empfohlen für Geldentwertung, regelmäßige Anpassung sinnvoll"
+          },
+          {
+            "id": "staffelmiete-regelung",
+            "title": "Staffelmiete-Regelung",
+            "description": "Automatische Erhöhung mit genauem Zeitpunkt + Betrag, dann keine 15-20% mehr möglich"
+          },
+          {
+            "id": "mietvertragsklauseln",
+            "title": "Mietvertragsklauseln verstehen",
+            "description": "Staffelmiete, Mieterhöhungen (15-20% alle 3 Jahre), ungültige Klauseln"
+          },
+          {
+            "id": "eigenbedarfskuendigung",
+            "title": "Eigenbedarfskündigung verstehen",
+            "description": "Sehr schwer! Neubau-Sperre 10 Jahre, nur bei Selbsteinzug möglich"
+          },
+          {
+            "id": "mietvertrag-inflationsausgleich",
+            "title": "Inflationsausgleich durch Mieterhöhungen",
+            "description": "2% pro Jahr empfohlen, Geldentwertung kompensieren"
+          },
+          {
+            "id": "mietvertrag-praxisbeispiel",
+            "title": "Praxisbeispiel Benzstraße",
+            "description": "1983er Vertrag (50 DM), 60+ Wohnungen ohne Probleme"
+          },
+          {
+            "id": "uebergabeprotokoll",
+            "title": "Übergabeprotokoll",
+            "description": "Zustand bei Einzug, mitgemietete Gegenstände, Schlüssel"
+          },
+          {
+            "id": "zahlungsnachweis-mieter",
+            "title": "Zahlungsnachweis Mieter",
+            "description": "Bonität prüfen, Kontoauszüge, Mietrückstände"
+          },
+          {
+            "id": "flurkarte-verstehen",
+            "title": "Flurkarte verstehen",
+            "description": "Flurstück, Gemarkung, Geschossigkeit, Gebäude, Nutzungsarten"
+          },
+          {
+            "id": "flurkarte-als-beweismittel",
+            "title": "Flurkarte als amtliche Kartengrundlage",
+            "description": "Beweisfunktion: Grundstück existiert wirklich"
+          },
+          {
+            "id": "grundbuchauszug-aufbau",
+            "title": "Grundbuchauszug-Aufbau verstehen",
+            "description": "5 Teile: Deckblatt, Bestandsverzeichnis, Abteilung 1-3"
+          },
+          {
+            "id": "grundbuch-happy-immo-top4",
+            "title": "Happy-Immo Top 4 Grundbuch-Prüfpunkte",
+            "description": "Eigentümer stimmt, keine Auflassungsvormerkung Dritter, Grundschulden gelöscht, Lasten OK"
+          },
+          {
+            "id": "grundbuch-abteilung1",
+            "title": "Abteilung 1: Eigentümerverhältnisse",
+            "description": "Aktuelle und frühere Eigentümer, Auflassungen, laufende Nummern"
+          },
+          {
+            "id": "grundbuch-abteilung2",
+            "title": "Abteilung 2: Lasten und Beschränkungen",
+            "description": "Dienstbarkeiten, Auflassungsvormerkung, Vorkaufsrechte, Zwangsversteigerung"
+          },
+          {
+            "id": "grundbuch-abteilung3",
+            "title": "Abteilung 3: Grundschulden",
+            "description": "Kreditsicherheiten, mit/ohne Brief, Löschung bei Kauf"
+          },
+          {
+            "id": "grundbuch-aktualitaet",
+            "title": "Grundbuch-Aktualität prüfen",
+            "description": "Datum letzte Änderung vs. Ausdruck, neue Kredite erkennen"
+          },
+          {
+            "id": "hausgeldabrechnung-auswerten",
+            "title": "Hausgeldabrechnung auswerten",
+            "description": "Top 2 Punkte: Nicht umlagefähige Kosten + Instandhaltungsrücklage"
+          },
+          {
+            "id": "verteilerschluessel",
+            "title": "Verteilerschlüssel verstehen",
+            "description": "Miteigentumsanteile und Kostenverteilung nach Teilungserklärung"
+          },
+          {
+            "id": "wirtschaftsplan-pruefen",
+            "title": "Wirtschaftsplan prüfen",
+            "description": "Zukunftsprognose vs. Hausgeldabrechnung, Instandhaltungsplanung"
+          },
+          {
+            "id": "wirtschaftsplan-vs-hausgeld",
+            "title": "Wirtschaftsplan vs. Hausgeldabrechnung",
+            "description": "Für Kalkulation: Wirtschaftsplan nutzen (Zukunftskosten)"
+          },
+          {
+            "id": "weg-protokolle-analysieren",
+            "title": "WEG-Protokolle systematisch analysieren",
+            "description": "Letzten 3 Jahre lesen, Beschlussfähigkeit prüfen, Stimmung bewerten"
+          },
+          {
+            "id": "weg-querulanten-erkennen",
+            "title": "Querulanten vs. pragmatische WEG",
+            "description": "Dealbreaker: zerrissene WEG vs. einstimmige Beschlüsse (Benzstraße)"
+          },
+          {
+            "id": "weg-hausverwaltung-kontakt",
+            "title": "Hausverwaltung kontaktieren",
+            "description": "Mit Verkäufer absprechen, dann direkt Details erfragen"
+          },
+          {
+            "id": "sonderumlagen-risiken",
+            "title": "Sonderumlagen-Risiken",
+            "description": "Geplante Sanierungen, Fassade, Dach, zusätzliche Kosten"
+          },
+          {
+            "id": "hausverwaltung-bewerten",
+            "title": "Hausverwaltung bewerten",
+            "description": "Qualität der Arbeit aus WEG-Protokollen ableiten"
+          },
+          {
+            "id": "teilungserklaerung-verstehen",
+            "title": "Teilungserklärung verstehen",
+            "description": "25 Seiten Dokument mit Grundrissen aller Geschosse systematisch durchgehen"
+          },
+          {
+            "id": "teilungserklaerung-top3",
+            "title": "Happy-Immo Top 3 Teilungserklärung",
+            "description": "Wohnungsgröße mit Exposé vergleichen, Miteigentumsanteile, Gemeinschaftsordnung"
+          },
+          {
+            "id": "aufteilungsplan-verstehen",
+            "title": "Aufteilungsplan verstehen",
+            "description": "Lageplan, alle Grundrisse, Schnitte, Ansichten - was gehört zur Wohnung?"
+          },
+          {
+            "id": "sonder-vs-gemeinschaftseigentum",
+            "title": "Sonder- vs. Gemeinschaftseigentum",
+            "description": "Was gehört zur Wohnung? Was zur WEG? Sondernutzungsrechte"
+          },
+          {
+            "id": "gemeinschaftsordnung",
+            "title": "Gemeinschaftsordnung prüfen",
+            "description": "Verbote: Haustiere, Musik, Berufsgruppen - mögliche Dealbreaker"
+          },
+          {
+            "id": "wohnflaechenberechnung-pruefen",
+            "title": "Wohnfläche nachmessen",
+            "description": "DIN 277, Raumhöhen, Balkone 25-50%, Verhandlungspotenzial"
+          },
+          {
+            "id": "energieausweis-bewerten",
+            "title": "Energieausweis verstehen",
+            "description": "Energieeffizienzklassen A-H, Heizstoffe, Gebäudeenergiegesetz"
+          },
+          {
+            "id": "energieausweis-arten",
+            "title": "Verbrauchs- vs. Bedarfsausweis",
+            "description": "Unterschiede, Aussagekraft und Bewertungskriterien"
+          },
+          {
+            "id": "denkmalschutz-pruefen",
+            "title": "Denkmalschutz prüfen",
+            "description": "Steuervorteile vs. Sanierungseinschränkungen (Stuckdecken etc.)"
+          },
+          {
+            "id": "milieuschutz-verstehen",
+            "title": "Milieuschutz verstehen",
+            "description": "Mietpreisbremse und Beschränkungen in besonderen Gebieten"
+          },
+          {
+            "id": "baulasten-bewerten",
+            "title": "Baulasten bewerten",
+            "description": "Anbau-, Stellplatz-, Spielflächenbaulasten auf dem Grundstück"
+          },
+          {
+            "id": "dokumenten-workflow",
+            "title": "Dokumenten-Workflow optimieren",
+            "description": "Reihenfolge, Zeit-Management, Verhandlung bei Fehlern"
+          }
+        ]
+      },
+      {
+        "id": "technik-check",
+        "title": "Technik-Check",
+        "description": "Technischen Zustand bewerten",
+        "pages": [
+          {
+            "id": "technik-grundlagen",
+            "title": "Technik-Check Grundlagen",
+            "description": "5 Schlüsselfragen systematisch anwenden: Welche Maßnahmen? Wann? Kosten? Rücklage? WEG-Planung?"
+          },
+          {
+            "id": "technik-check-aufbau",
+            "title": "Technik-Check Aufbau",
+            "description": "Gebäude: Fassade, Fenster, Treppenhaus, Dach, Keller, Heizung, Elektrik, Wasser - Wohnung: Böden, Wände, Küche, Bad, Balkon"
+          },
+          {
+            "id": "fuenf-schluesselfragen",
+            "title": "5 Schlüsselfragen Technik-Check",
+            "description": "1. Welche Maßnahmen wann? 2. Kosten? 3. Rücklage ausreichend? 4. Sonderumlage? 5. WEG-Planung?"
+          },
+          {
+            "id": "technik-checkliste-happy-immo",
+            "title": "Happy Immo Technik-Checkliste",
+            "description": "Dokumentation aller Informationen, Bewertung positiver/negativer Merkmale"
+          },
+          {
+            "id": "gemeinschafts-vs-sondereigentum",
+            "title": "Gemeinschafts- vs. Sondereigentum",
+            "description": "WEG verwaltet Dach, Fassade, Flure, Fenster, Leitungen, tragende Wände, Heizung, Aufzug"
+          },
+          {
+            "id": "fassade-schaeden-erkennen",
+            "title": "Fassadenschäden erkennen",
+            "description": "Risse, Abplatzungen durch Verwitterung: Regen, Frost führen zu Farbabblätterung"
+          },
+          {
+            "id": "fenster-material-lebensdauer",
+            "title": "Fenster: Material & Lebensdauer",
+            "description": "Kunststoff 40-50 Jahre, Holz alt 15-20 / modern 35-40, Aluminium 50-60 Jahre"
+          },
+          {
+            "id": "fenster-verglasung",
+            "title": "Fensterverglasung bewerten",
+            "description": "Einzelverglasung austauschen, Doppelverglasung Standard, Zieht es? Wird es nass?"
+          },
+          {
+            "id": "treppenhaus-bewerten",
+            "title": "Treppenhaus & Eingang bewerten",
+            "description": "Klingelanlage, Briefkästen, Sauberkeit, Graffiti, Farbabplatzungen = Wasserschaden?"
+          },
+          {
+            "id": "dachtypen-vergleich",
+            "title": "Dachtypen vergleichen",
+            "description": "Ziegeldach 50 Jahre vs. Pappdach/Flachdach 30 Jahre - Bitumen günstiger aber kurzlebiger"
+          },
+          {
+            "id": "dach-wartungszustand",
+            "title": "Dach-Wartungszustand bewerten",
+            "description": "Dreckige Ziegel, Moos, schlechte Dachrinnen = schlechte WEG-Pflege, Kosten kommen"
+          },
+          {
+            "id": "keller-feuchtigkeit-messen",
+            "title": "Keller-Feuchtigkeit messen",
+            "description": "Messgerät bis 100%, ab 40% piepst es = problematisch, Nase nutzen für Geruch"
+          },
+          {
+            "id": "keller-schaeden-erkennen",
+            "title": "Keller-Schäden erkennen",
+            "description": "Helle Flecken = trocken, dunkle = feucht, Putz bröckelt, seit wann? Verschlechterung?"
+          },
+          {
+            "id": "keller-bodenmaterialien",
+            "title": "Keller-Bodenmaterialien",
+            "description": "Neubau: Betonböden, Altbau: Stein, selten Holzböden - unter Stein ist Erde/Sand"
+          },
+          {
+            "id": "heizungsarten-marktanteile",
+            "title": "Heizungsarten & Marktanteile",
+            "description": "Gas 50%, Öl 26% (2026 Verbot), Fernwärme umweltfreundlich, Strom 5% teuer"
+          },
+          {
+            "id": "heizung-nachhaltigkeit",
+            "title": "Heizung & Nachhaltigkeit",
+            "description": "Öl 17% mehr CO2 als Gas, Fernwärme effizient aber Holz-Herkunft prüfen"
+          },
+          {
+            "id": "heizung-wartung-alter",
+            "title": "Heizung: Wartung & Alter",
+            "description": "Jährliche Wartung, Baujahr auf Plakette ablesen, letzte Wartung Jahr/Monat"
+          },
+          {
+            "id": "gasetagenheizung-kosten",
+            "title": "Gasetagenheizung Kosten",
+            "description": "3.000-4.000€ für 120qm Wohnung, Wartung auf Mieter umlegbar"
+          },
+          {
+            "id": "elektrik-sicherungskasten",
+            "title": "Elektrik: Sicherungskasten prüfen",
+            "description": "Drehsicherungen = Erneuerung nötig, moderne Sicherungen OK, E-Check alle 10 Jahre"
+          },
+          {
+            "id": "trinkwasserleitungen",
+            "title": "Trinkwasserleitungen bewerten",
+            "description": "Bleirohre verboten (gräulich, Verdickungen), heute: Stahl, Kupfer, Kunststoff"
+          },
+          {
+            "id": "abwasserleitungen",
+            "title": "Abwasserleitungen prüfen",
+            "description": "Asbest-Abwasser teuer zu entsorgen, heute Kunststoff, Unterschied erkennbar"
+          },
+          {
+            "id": "strangsanierung",
+            "title": "Strangsanierung verstehen",
+            "description": "Vertikale Leitungen durch Wohnkomplex, Bau-/Wartungsarbeiten an Rohren"
+          },
+          {
+            "id": "wohnung-bewertungsfrage",
+            "title": "Wohnungs-Bewertungsfrage",
+            "description": "'Würde ich oder Bekannte hier einziehen oder braucht es Erneuerung?'"
+          },
+          {
+            "id": "boeden-wandmaterialien",
+            "title": "Böden & Wandmaterialien",
+            "description": "Laminat, Parkett (höherpreisige Lagen), Fliesen, Linoleum - Wände tapeziert oder gestrichen"
+          },
+          {
+            "id": "kueche-bad-bewerten",
+            "title": "Küche & Bad bewerten",
+            "description": "Küche mit Kaufvertrag separat ausweisen (Steuer), Bad-Größe, Tageslicht, Entlüftung"
+          },
+          {
+            "id": "balkon-stellplatz",
+            "title": "Balkon & Stellplatz prüfen",
+            "description": "Südwest-Ausrichtung optimal (Sonnenuntergänge), Lärm, Stellplatz für normales Auto"
+          },
+          {
+            "id": "schoenheitsreparaturen",
+            "title": "Schönheitsreparaturen verstehen",
+            "description": "Mieter: Streichen, Tapezieren - NICHT: Teppich, Parkett, Lichtschalter, Türschloss"
+          },
+          {
+            "id": "technik-kosten-schaetzen",
+            "title": "Technik-Kosten schätzen",
+            "description": "Altbaukosten.de, Happy Immo Vorlage, befreundete Handwerker - über 1.000€ berücksichtigen"
+          },
+          {
+            "id": "bausachverstaendige-wann",
+            "title": "Bausachverständige: Wann nötig?",
+            "description": "200-500€, bei Feuchtigkeit, Schimmel, Asbest, WEG-Protokoll-Problemen"
+          },
+          {
+            "id": "handwerker-vs-sachverstaendiger",
+            "title": "Handwerker vs. Sachverständiger",
+            "description": "Handwerker pragmatisch & günstiger, Sachverständiger schreibt Bericht aber keine Garantie"
+          },
+          {
+            "id": "heizungsgesetz-2024",
+            "title": "Heizungsgesetz 2024",
+            "description": "65% erneuerbare Energien ab 2024 Neubaugebiete, Übergangsfristen 5-13 Jahre"
+          },
+          {
+            "id": "heizungsgesetz-foerderung",
+            "title": "Heizungsgesetz: Förderung",
+            "description": "Bis 70% bzw. 21.000€ maximum, Mieter-Umlage max. 10% der Kosten, 50 Cent/qm"
+          },
+          {
+            "id": "brandschutz-baustatik",
+            "title": "Brandschutz & Baustatik",
+            "description": "Dachausbau: Statik lösbar mit Geld, Brandschutz kritisch - Berater hinzuziehen"
+          },
+          {
+            "id": "gebaeudebestandteile",
+            "title": "Gebäudebestandteile",
+            "description": "Gemeinschaftseigentum vs. Sondereigentum"
+          }
+        ]
+      },
+      {
+        "id": "mietsituation",
+        "title": "Mietsituation",
+        "description": "Vermietung und Mietrecht",
+        "pages": [
+          {
+            "id": "mieterauswahl",
+            "title": "Mieterauswahl",
+            "description": "Kriterien für die Auswahl geeigneter Mieter"
+          },
+          {
+            "id": "mieterauswahl-do-good",
+            "title": "Do Good bei Mieterauswahl",
+            "description": "Alleinerziehende, Familien, junge Menschen, Künstler - trotzdem streng prüfen"
+          },
+          {
+            "id": "mieterauswahl-6-schritte",
+            "title": "6 Schritte Mieterauswahl",
+            "description": "1. Selbstauskunft, 2. Schufa, 3. Bürgen, 4. Bauchgefühl, 5. Einkommensnachweise, 6. Empfehlungsschreiben"
+          },
+          {
+            "id": "selbstauskunft-mieter",
+            "title": "Selbstauskunft Mieter",
+            "description": "Happy Immo Vorlage: Persönliche Daten, Gehalt, Insolvenz, Vorstrafen"
+          },
+          {
+            "id": "schufa-auskunft",
+            "title": "Schufa-Auskunft einholen",
+            "description": "Direkt bei Schufa oder über DKB Vermieter-Account, Insolvenzrisiko minimieren"
+          },
+          {
+            "id": "buergschaft-studenten",
+            "title": "Bürgschaft bei Studenten",
+            "description": "Solvente Familienangehörige als selbstschuldnerische Bürgen einbeziehen"
+          },
+          {
+            "id": "einkommensnachweise-pruefen",
+            "title": "Einkommensnachweise prüfen",
+            "description": "Geregelte Einkommen, bei Selbstständigen: Steuerberater-Auskünfte, 2 Jahre Steuerbescheide"
+          },
+          {
+            "id": "empfehlungsschreiben-vormieter",
+            "title": "Empfehlungsschreiben Vormieter",
+            "description": "Pünktliche Zahlung, keine Rechtsstreitigkeiten, Hausordnung eingehalten"
+          },
+          {
+            "id": "mietnomaden-vermeiden",
+            "title": "Mietnomaden vermeiden",
+            "description": "Sehr selten, durch 6-Punkte-Check ausschließbar: keine positive Schufa, keine Nachweise"
+          },
+          {
+            "id": "mietausfall-ruecklage-3-prozent",
+            "title": "Mietausfall-Rücklage 3%",
+            "description": "Deutschland-Durchschnitt 3% Mietausfall, entsprechende Rücklagen bilden"
+          },
+          {
+            "id": "mietpreisfindung",
+            "title": "Die richtige Miete",
+            "description": "Ortsübliche Vergleichsmiete, Mietspiegel und Mietpreisbremse"
+          },
+          {
+            "id": "mietvertragsarten",
+            "title": "Mietvertragsarten",
+            "description": "Unterschiedliche Mietvertragsformen und deren Vor-/Nachteile"
+          },
+          {
+            "id": "mietvertrag-top10",
+            "title": "Top 10 Mietvertrag",
+            "description": "Die wichtigsten Klauseln im Mietvertrag"
+          },
+          {
+            "id": "kuendigungsmoeglichkeiten",
+            "title": "Kündigungsmöglichkeiten",
+            "description": "Wann und wie Vermieter kündigen können"
+          }
+        ]
+      },
+      {
+        "id": "kaufvertrag",
+        "title": "Kaufvertrag",
+        "description": "Kaufvertragsabwicklung",
+        "pages": [
+          {
+            "id": "notar-rolle",
+            "title": "Die Notarin",
+            "description": "Rolle und Aufgaben der Notarin beim Immobilienkauf"
+          },
+          {
+            "id": "notar-auswahl-wer-bestimmt",
+            "title": "Notarauswahl: Wer bestimmt?",
+            "description": "Verkäufer bestimmt Notar, Käufer kann eigenen Notar verlangen (zahlt dann Differenz)"
+          },
+          {
+            "id": "notar-neutralitaet",
+            "title": "Notar-Neutralität",
+            "description": "Notar muss neutral beraten - sowohl Käufer als auch Verkäufer"
+          },
+          {
+            "id": "notar-aufgaben-detail",
+            "title": "Notar-Aufgaben im Detail",
+            "description": "Kaufvertrag erstellen, beurkunden, Grundbucheintrag veranlassen, Geld überwachen"
+          },
+          {
+            "id": "kaufvertrag-inhalte",
+            "title": "Der Kaufvertrag",
+            "description": "Top 7 Punkte im Kaufvertrag: Kaufpreis, Kaufgegenstand, Fälligkeitsbedingungen"
+          },
+          {
+            "id": "kaufvertrag-top7-punkte",
+            "title": "Top 7 Kaufvertrag-Punkte",
+            "description": "1. Vertragsparteien, 2. Kaufgegenstand, 3. Kaufpreis, 4. Fälligkeitsbedingungen, 5. Besitzübergang, 6. Lasten/Beschränkungen, 7. Gewährleistung"
+          },
+          {
+            "id": "kaufpreis-und-finanzierung",
+            "title": "Kaufpreis und Finanzierung im Vertrag",
+            "description": "Finanzierungsvorbehalt wichtig: Vertrag platzt wenn Bank nicht finanziert"
+          },
+          {
+            "id": "besitzuebergang-regelung",
+            "title": "Besitzübergang regeln",
+            "description": "Wann bekommt Käufer Schlüssel, Nutzung, Lasten (meist nach vollständiger Zahlung)"
+          },
+          {
+            "id": "gewaehrleistungsausschluss",
+            "title": "Gewährleistungsausschluss",
+            "description": "Verkäufer schließt meist Gewährleistung aus - Käufer kauft 'wie gesehen'"
+          },
+          {
+            "id": "beurkundung",
+            "title": "Beurkundung & letzte Schritte",
+            "description": "Ablauf der notariellen Beurkundung"
+          },
+          {
+            "id": "kaufpreisfaelligkeit",
+            "title": "Kaufpreisfälligkeit",
+            "description": "Kaufpreisfälligkeitsmitteilung durch Notar, Frist beachten, Bank überweist bei Grundschuldlöschung"
+          },
+          {
+            "id": "eigentumsuebergang-prozess",
+            "title": "Eigentumsübergang-Prozess",
+            "description": "Auflassungsvormerkung → Zahlung → Grundbucheintragung → Eigentum"
+          },
+          {
+            "id": "auflassungsvormerking",
+            "title": "Auflassungsvormerkung",
+            "description": "Reservierung des Eigentums, schützt vor Verkauf an Dritte oder Belastung"
+          }
+        ]
+      },
+      {
+        "id": "eigentuemer-sein",
+        "title": "Eigentümer sein",
+        "description": "Nach dem Kauf: Rechte und Pflichten",
+        "pages": [
+          {
+            "id": "schluesseluebergabe",
+            "title": "Schlüsselübergabe",
+            "description": "Ablauf der Immobilienübernahme"
+          },
+          {
+            "id": "uebergabe-6-schritte",
+            "title": "6 Schritte Wohnungsübergabe",
+            "description": "1. Begehung, 2. Zählerstände, 3. Technische Einbauten, 4. Inventar, 5. Unterlagen, 6. Schlüssel"
+          },
+          {
+            "id": "gekauft-wie-gesehen",
+            "title": "Gekauft wie gesehen Prinzip",
+            "description": "Gewährleistung nur bei versteckten Mängeln oder arglistiger Täuschung"
+          },
+          {
+            "id": "besenrein-uebergabe",
+            "title": "Besenreine Übergabe",
+            "description": "Freigeräumt von Gegenständen, grober Schmutz entfernt, gründliche Reinigung nicht nötig"
+          },
+          {
+            "id": "zaehlerstaende-dokumentation",
+            "title": "Zählerstände dokumentieren",
+            "description": "Heizung, Wasser, Strom - bei leerer Wohnung wichtig, bei vermieteter entfällt"
+          },
+          {
+            "id": "technische-einweisung",
+            "title": "Technische Einweisung",
+            "description": "Heizung, Anschlüsse, Geräte erklären - Bedienungsanleitungen und Garantiebelege übergeben"
+          },
+          {
+            "id": "uebergabeprotokoll-erstellen",
+            "title": "Übergabeprotokoll erstellen",
+            "description": "Zustand dokumentieren, von beiden Parteien unterschreiben, an Notar senden"
+          },
+          {
+            "id": "vermietet-gekaufte-wohnung",
+            "title": "Vermietet gekaufte Wohnung",
+            "description": "Keine Schlüsselübergabe, Schlüssel bleiben beim Mieter"
+          },
+          {
+            "id": "mieteinnahmen-verwalten",
+            "title": "Mieteinnahmen verwalten",
+            "description": "Rechte und Pflichten als Vermieter"
+          },
+          {
+            "id": "verfuegungsgewalt-erhalten",
+            "title": "Verfügungsgewalt erhalten",
+            "description": "Miete erhalten, Hausgeld/Grundsteuer/Versicherung zahlen, Entscheidungen treffen"
+          },
+          {
+            "id": "sustainable-vermietung",
+            "title": "Nachhaltige Vermietung",
+            "description": "Gutes bewirken: Mieterauswahl, Nachhaltigkeit, WEG-Entscheidungen beeinflussen"
+          },
+          {
+            "id": "mietvertrag-rechte",
+            "title": "Mietvertrag-Rechte",
+            "description": "Kaution (2-3 Monatsmieten), Miete, Nebenkostenvorauszahlungen bei Netto-Kaltmietvertrag"
+          },
+          {
+            "id": "kaution-handling",
+            "title": "Kaution-Handling",
+            "description": "Verkäufer erstattet Mieter, Mieter überweist neue Kaution - mit Zinsen zurückerstatten"
+          },
+          {
+            "id": "eigentumswechsel-mitteilung",
+            "title": "Eigentümerwechsel mitteilen",
+            "description": "Mieter über Wechsel informieren, neue Zahlungsdetails, alte Zahlungen weiterleiten lassen"
+          },
+          {
+            "id": "mieterauswahl-neue-wohnung",
+            "title": "Mieterauswahl neue Wohnung",
+            "description": "Schufa, Gehaltsabrechnungen, Arbeitsvertrag, Bürgschaft - keine Diskriminierung"
+          },
+          {
+            "id": "miethoehe-gesetzgebung",
+            "title": "Miethöhe-Gesetzgebung",
+            "description": "Mietspiegel und Mietpreisbremse beachten, regionale Regularien"
+          },
+          {
+            "id": "mietminderung-maengel",
+            "title": "Mietminderung bei Mängeln",
+            "description": "Mieter darf kürzen bei neuen Mängeln, nach Beseitigung wieder volle Miete"
+          },
+          {
+            "id": "kuendigung-wichtiger-grund",
+            "title": "Kündigung wichtiger Grund",
+            "description": "Zahlungsverzug 2 Monate, Eigenbedarf schwierig in Großstädten"
+          },
+          {
+            "id": "kosten-als-eigentuemer",
+            "title": "Kosten als Eigentümer",
+            "description": "Laufende Kosten und Verpflichtungen"
+          },
+          {
+            "id": "monatliche-kosten-eigentuemer",
+            "title": "Monatliche Kosten Eigentümer",
+            "description": "Hausgeld, Kreditrate, Grundsteuer (quartärlich), Gasheizung-Wartung"
+          },
+          {
+            "id": "nebenkostenabrechnung-erstellen",
+            "title": "Nebenkostenabrechnung erstellen",
+            "description": "12-Monats-Frist, schriftlich, nachvollziehbar, Belege verfügbar halten"
+          },
+          {
+            "id": "nebenkostenabrechnung-pragmatisch",
+            "title": "Nebenkostenabrechnung pragmatisch",
+            "description": "Hausverwaltung-Abrechnung + Grundsteuer + Gasheizung - Vorauszahlungen = Nachzahlung/Guthaben"
+          },
+          {
+            "id": "hausverwaltung-outsourcing",
+            "title": "Hausverwaltung-Outsourcing",
+            "description": "z.B. Capitalis 22€/Monat für kompletten Schriftverkehr"
+          },
+          {
+            "id": "besondere-gebiete",
+            "title": "Besondere Gebiete",
+            "description": "Milieuschutz, Sanierungsgebiete, geförderte Wohnungen - Einschränkungen beachten"
+          },
+          {
+            "id": "einfamilienhaus-besonderheiten",
+            "title": "Einfamilienhaus Besonderheiten",
+            "description": "Keine Hausverwaltung, Verkehrssicherung, Gebäudeversicherung, Müll selbst organisieren"
+          },
+          {
+            "id": "vermietet-de-empfehlung",
+            "title": "Vermietet.de Empfehlung",
+            "description": "Technologische Lösung für Mietenverwaltung und Nebenkostenabrechnung"
+          },
+          {
+            "id": "eigentuemerversammlung",
+            "title": "Eigentümerversammlung",
+            "description": "Teilnahme und Mitbestimmung in der WEG"
+          },
+          {
+            "id": "weg-eintritt",
+            "title": "WEG-Eintritt",
+            "description": "Mit Wohnungskauf Eintritt in Wohnungseigentumsgemeinschaft"
+          },
+          {
+            "id": "weg-rechtliche-grundlagen",
+            "title": "WEG rechtliche Grundlagen",
+            "description": "Wohnungseigentumsgesetz (WEG) + Teilungserklärung regeln Rechte/Pflichten"
+          },
+          {
+            "id": "gemeinschaftsordnung-hausordnung",
+            "title": "Gemeinschaftsordnung & Hausordnung",
+            "description": "Stimmrechte, Kostenaufteilung, Haustiere, Musik, Airbnb-Verbote prüfen"
+          },
+          {
+            "id": "eigentuemerversammlung-entscheidungen",
+            "title": "Eigentümerversammlung Entscheidungen",
+            "description": "Hausordnung, Rücklage, Baumaßnahmen, Verwalter-Wahl, Versicherungen"
+          },
+          {
+            "id": "drei-beschlussarten",
+            "title": "3 Beschlussarten",
+            "description": "1. Ordentliche ETV (jährlich), 2. Außerordentliche ETV (dringend), 3. Umlaufbeschluss (alle zustimmen)"
+          },
+          {
+            "id": "stimmrechte-verteilung",
+            "title": "Stimmrechte-Verteilung",
+            "description": "Kopfprinzip (1 Stimme), Objektprinzip (nach Einheiten), Wertprinzip (nach Miteigentumsanteil)"
+          },
+          {
+            "id": "mehrheitsregel",
+            "title": "Mehrheitsregel",
+            "description": "Mindestens Hälfte der Eigentümer muss zustimmen für Beschluss"
+          },
+          {
+            "id": "hausverwaltung",
+            "title": "Hausverwaltung",
+            "description": "Zusammenarbeit mit der Hausverwaltung"
+          },
+          {
+            "id": "grundbuch-eintragung-abwarten",
+            "title": "Grundbuch-Eintragung abwarten",
+            "description": "Erst nach Eintragung WEG-Mitglied, bis dahin Vollmachten vom Verkäufer"
+          },
+          {
+            "id": "hausverwaltung-aufgaben",
+            "title": "Hausverwaltung Aufgaben",
+            "description": "ETV einberufen, Wirtschaftsplan, Vertretung, Versicherung, Rechnungen, Verträge, Jahresabrechnung"
+          },
+          {
+            "id": "externe-vs-selbstverwaltung",
+            "title": "Externe vs. Selbstverwaltung",
+            "description": "Externe Verwaltung üblich, Selbstverwaltung bei kleinen Anlagen (Haftungsfrage klären)"
+          },
+          {
+            "id": "beirat-unterstuetzung",
+            "title": "Beirat-Unterstützung",
+            "description": "Ehrenamtliche WEG-Mitglieder unterstützen Hausverwaltung (Haftungsrisiko)"
+          },
+          {
+            "id": "hausverwaltung-auswahl-kriterien",
+            "title": "Hausverwaltung Auswahlkriterien",
+            "description": "Organisation, kaufmännisches Verständnis, Erfahrung, Verband, Nähe, faire Preise"
+          },
+          {
+            "id": "dumpingpreise-zusatzgebuehren",
+            "title": "Dumpingpreise & Zusatzgebühren",
+            "description": "Niedrige Grundpreise oft durch viele Zusatzgebühren kompensiert - 3 Angebote vergleichen"
+          },
+          {
+            "id": "verwaltungskosten-faktoren",
+            "title": "Verwaltungskosten Faktoren",
+            "description": "WEG vs. Miethausverwaltung, Einheiten-Anzahl, Klientel, Zustand, Lage beeinflussen Preis"
+          },
+          {
+            "id": "technologie-nachhaltigkeit",
+            "title": "Technologie & Nachhaltigkeit",
+            "description": "Dashboard für Übersicht, elektronische Prozesse, Nachhaltigkeits-Beitrag durch Technik"
+          }
+        ]
+      },
+      {
+        "id": "rechtliches",
+        "title": "Rechtliches & Steuern",
+        "description": "Rechtliche und steuerliche Aspekte",
+        "pages": [
+          {
+            "id": "grunderwerbsteuer",
+            "title": "Grunderwerbsteuer",
+            "description": "Berechnung und Einsparmöglichkeiten bei der Grunderwerbsteuer"
+          },
+          {
+            "id": "weg-recht",
+            "title": "WEG-Recht",
+            "description": "Wohnungseigentumsgesetz und Gemeinschaftseigentum"
+          },
+          {
+            "id": "mietrecht",
+            "title": "Mietrecht Grundlagen",
+            "description": "Wichtige mietrechtliche Bestimmungen für Vermieter"
+          },
+          {
+            "id": "steuerliche-behandlung",
+            "title": "Steuerliche Behandlung",
+            "description": "Abschreibungen, Werbungskosten und steuerliche Optimierung"
+          }
+        ]
+      },
+      {
+        "id": "tools-vorlagen",
+        "title": "Tools & Vorlagen",
+        "description": "Praktische Hilfsmittel und Checklisten",
+        "pages": [
+          {
+            "id": "bierdeckelrechnung-tool",
+            "title": "Bierdeckelrechnung (Excel)",
+            "description": "Excel-Vorlage für die schnelle Immobilienbewertung"
+          },
+          {
+            "id": "kalkulation-vollstaendig",
+            "title": "Vollständige Kalkulation",
+            "description": "Detaillierte Kalkulationsvorlage mit allen Kostenpositionen"
+          },
+          {
+            "id": "finanzierungsunterlagen-checkliste",
+            "title": "Finanzierungsunterlagen",
+            "description": "Checkliste für Bankunterlagen und Objektinformationen"
+          },
+          {
+            "id": "angebotsbewertung-banken",
+            "title": "Bankangebote bewerten",
+            "description": "Vorlage zum systematischen Vergleich von Finanzierungsangeboten"
+          },
+          {
+            "id": "besichtigung-checkliste",
+            "title": "Besichtigungs-Checkliste",
+            "description": "Systematische Prüfliste für Immobilienbesichtigungen"
+          },
+          {
+            "id": "besichtigungsauswertung-vorlage",
+            "title": "Besichtigungsauswertung",
+            "description": "Bewertungsmatrix: Vermietbarkeit und Kostenschätzung"
+          },
+          {
+            "id": "voraussichtliche-kosten",
+            "title": "Kostenschätzung-Tool",
+            "description": "Spannbreiten von einfacher Erneuerung bis Luxussanierung"
+          },
+          {
+            "id": "technik-checkliste",
+            "title": "Technik-Checkliste",
+            "description": "Detaillierte Prüfliste für den technischen Zustand"
+          },
+          {
+            "id": "dokumente-checkliste",
+            "title": "Dokumente-Checkliste",
+            "description": "Übersicht aller relevanten Immobiliendokumente"
+          },
+          {
+            "id": "suchprofil-vorlage",
+            "title": "Suchprofil-Vorlage",
+            "description": "Strukturierte Excel-Vorlage für Kriteriendefinition"
+          },
+          {
+            "id": "verhandlungsstrategien",
+            "title": "Verhandlungsstrategien",
+            "description": "Konkrete Argumente und Taktiken für Kaufpreisverhandlungen"
+          }
+        ]
+      },
+      {
+        "id": "glossar",
+        "title": "Glossar",
+        "description": "Wichtige Begriffe der Immobilienbranche",
+        "pages": [
+          {
+            "id": "fachbegriffe-a-m",
+            "title": "Fachbegriffe A-M",
+            "description": "Annuität bis Mietspiegle - wichtige Begriffe erklärt"
+          },
+          {
+            "id": "fachbegriffe-n-z",
+            "title": "Fachbegriffe N-Z",
+            "description": "Nettorendite bis Zwangsversteigerung - wichtige Begriffe erklärt"
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "version": "1.0",
+    "created": "2024",
+    "description": "Diese Struktur basiert auf den Transkripten des Immobilien-Investment-Kurses und fokussiert sich auf faktische, nachschlagbare Inhalte. Mindset und persönliche Entwicklungsthemen sind bewusst ausgeschlossen und gehören in den separaten Lernpfad.",
+    "excluded_from_wiki": [
+      "Mindset und Statusaufnahme",
+      "Visionboard",
+      "Personal Hacks und Motivation",
+      "Persönliche Erfolgsgeschichten"
+    ],
+    "content_sources": {
+      "grundlagen": [
+        "1_mindset_und_statusaufnahme/1.6 Statusaufnahme",
+        "2_finanzierung/2.2 Schulden sind gut"
+      ],
+      "kennzahlen": [
+        "6_Kalkulation/6.2 Daten Kennzahlen",
+        "6_Kalkulation/6.11 Deine Rendite"
+      ],
+      "finanzierung": ["2_finanzierung"],
+      "suche-und-bewertung": ["3_Suche"],
+      "lage": ["4_Lage"],
+      "besichtigung": ["5_Besichtigung"],
+      "kalkulation": ["6_Kalkulation"],
+      "dokumente": ["7_Dokumente"],
+      "technik-check": ["8_Technik_Check"],
+      "mietsituation": ["9_Mietsituation"],
+      "kaufvertrag": ["10_Kaufvertrag"],
+      "eigentuemer-sein": ["11_Abschluss"]
+    }
+  }
+}
