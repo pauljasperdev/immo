@@ -1,0 +1,131 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+
+## WIKI-SPEZIFISCHE REGELN
+
+Beim Erstellen oder Bearbeiten von Markdown-Dateien im /docs Ordner:
+
+### DATEI-STRUKTUR
+
+#### Frontmatter (immer erforderlich):
+
+```yaml
+---
+title: 'Präziser Titel für die Wiki-Seite'
+description: 'Kurze Beschreibung (max 160 Zeichen)'
+order: 1
+videoUrl: 'video-id' # Optional
+relatedDocs: ['doc-slug-1', 'doc-slug-2'] # Optional
+---
+```
+
+## Template
+
+`````md
+# [Titel]
+
+[1-2 Sätze: Was lernt der User hier?]
+
+@video[intro-video] <!-- falls vorhanden -->
+
+## Das Wichtigste in Kürze
+
+- **Punkt 1:** Kernaussage
+- **Punkt 2:** Kernaussage
+- **Punkt 3:** Kernaussage
+
+## Definition
+
+[Klare Definition des Begriffs]
+
+## Praktisches Beispiel
+
+**Situation:** [Realistische deutsche Immobilie]
+
+- Detail: Berechnung
+- **Ergebnis:** X.XXX€ oder X,X%
+
+## Typische Fehler
+
+❌ **Fehler:** Was oft falsch gemacht wird
+✅ **Richtig:** Korrekte Herangehensweise
+
+## Weiterführende Informationen
+
+- [Verwandter Artikel](/docs/kategorie/artikel)
+
+`````
+
+### DEUTSCHE FACHBEGRIFFE (konsistent verwenden):
+- Rendite (nicht Return/Ertrag)
+- Eigenkapitalrendite (nicht ROE)
+- Kaufnebenkosten (nicht Nebenkosten)
+- Grunderwerbsteuer (nicht GrESt)
+- Cashflow (OK auf Englisch)
+- Nettomietrendite vs. Bruttomietrendite
+
+### ZAHLEN-FORMATIERUNG:
+- Geld: 350.000€, 1.200€ (Punkt als Tausender)
+- Prozent: 3,6%, 15,2% (Komma als Dezimal)
+- Nie: €350,000 oder 3.6%
+
+### PRAXIS-BEISPIELE:
+Immer deutsche Städte/Preise verwenden:
+- München: 8.000-15.000€/m²
+- Berlin: 4.000-8.000€/m²
+- Hamburg: 5.000-10.000€/m²
+- Realistische Mieten einsetzen
+
+### VIDEO-INTEGRATION:
+- Syntax: @video[video-id-name]
+- Nach Definitionen: @video[erklaerung-rendite]
+- Bei Beispielen: @video[beispiel-berechnung]
+
+### MOBILE-OPTIMIERUNG:
+- Absätze max 3 Zeilen
+- Häufige H2/H3 Überschriften
+- Wichtiges mit **fett** hervorheben
+- Listen statt Fließtext
+
+### CALL-OUTS:
+````markdown
+> **💡 Tipp:** Praktischer Hinweis
+> **⚠️ Achtung:** Wichtige Warnung
+> **📊 Beispiel:** Konkrete Zahlen
+`````
+
+### QUALITÄTS-CHECK:
+
+Jede Wiki-Seite muss haben:
+
+- [x] Vollständiges Frontmatter
+- [x] "Das Wichtigste in Kürze" Sektion
+- [x] Mindestens 1 konkretes Zahlenbeispiel
+- [x] Deutsche Rechtschreibung/Grammatik
+- [x] Konsistente Fachbegriffe
+- [x] Links zu verwandten Artikeln
+- [x] Mobile-freundliche Struktur
+
+### RECHTLICHE HINWEISE:
+
+Bei komplexen Themen immer ergänzen:
+"Dies ist keine Steuer-/Rechtsberatung. Bei konkreten Fragen einen Experten konsultieren."
+
+### ZIELGRUPPE BEACHTEN:
+
+- Immobilien-Einsteiger (nicht Profis)
+- Praktische Anwendung (nicht Theorie)
+- "Du" verwenden (nicht "Sie")
+- Komplexe Begriffe immer erklären
+- Konkrete Handlungsempfehlungen geben
+
+Wenn ich an Markdown-Dateien arbeite, automatisch diese Standards anwenden und Verbesserungen vorschlagen.
+
+```
+
+Dieses File ist fokussiert auf die Wiki-Erstellung und gibt dir beim Arbeiten mit den Docs konkrete Hilfestellungen!
+```
+`````

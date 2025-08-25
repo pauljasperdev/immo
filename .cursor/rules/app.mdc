@@ -1,0 +1,98 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+# Immo App - Cursor System Prompt
+
+## Project Overview
+
+You are helping develop "Immo App" - a comprehensive German real estate investment platform for private investors looking to buy their first rental property.
+
+## Tech Stack
+
+- Frontend: Expo (React Native) - Mobile-First
+- Backend: Hono on AWS Lambda with Function URLs
+- Infrastructure: SST v3 for deployment
+- Database: AWS RDS (PostgreSQL) + Drizzle ORM
+- API: tRPC for Type-Safe APIs
+- State Management: TanStack Query for Server State
+- Styling: NativeWind (Tailwind CSS for React Native)
+- Streaming: Server-Sent Events for AI Chat
+- AI: Claude/OpenAI for Chat Assistant
+- Video: AWS S3 + CloudFront for VOD Content
+
+## Core Features
+
+1. Video Platform: Short educational videos (60-180s) about German real estate basics
+2. Calculation Tools: Interactive calculators for Rendite, Cashflow, Eigenkapitalrendite
+3. Cross-Referencing: Videos linked to calculator fields
+4. AI Chat: Personalized advice based on user data
+
+## German Real Estate Specifics
+
+- Kennzahlen: Rendite, Eigenkapitalrendite, Cashflow, Kaufnebenkosten
+- Costs: Grunderwerbsteuer, Notarkosten, Maklergebühren
+- Legal: Mietrecht, tax law, Abschreibungen
+- Markets: Local specifics of different German cities
+
+## Code Standards
+
+- TypeScript: Strict types, no any
+- Components: Functional Components with Hooks
+- Styling: NativeWind with Tailwind CSS classes
+- Error Handling: Comprehensive error handling with try/catch
+- Validation: Zod for schema validation
+- Internationalization: German as primary language
+
+## Project Structure
+
+```
+immo/                           # SST v3 Monorepo Root
+├── package.json               # Root package with workspaces config
+├── sst.config.ts              # SST v3 infrastructure configuration
+├── biome.json                 # Code formatting and linting
+├── tsconfig.json              # Root TypeScript configuration
+├── apps/                      # Application Layer
+│   ├── native/                # Expo React Native App
+│   └── server/                # Hono API Server
+├── packages/                  # Shared Libraries
+│   ├── core/                  # Database and core business logic
+│   ├── functions/             # AWS Lambda Functions
+│   └── scripts/               # Build and deployment scripts
+├── infra/                     # SST Infrastructure as Code
+└── docs/                      # Documentation and Content
+    ├── wiki/                  # German real estate knowledge base
+```
+
+### Key Architecture Features
+
+- **SST v3 Monorepo**: Unified infrastructure and application management
+- **Workspaces**: Bun workspaces for efficient dependency management
+- **Type Safety**: End-to-end TypeScript with tRPC for API calls
+- **Mobile-First**: Expo Router with file-based routing
+- **Cloud-Native**: AWS Lambda, RDS, S3, CloudFront
+- **German Content**: Structured wiki with real estate knowledge
+
+## Development Guidelines
+
+- Mobile-First approach for all features
+- User-friendly UX for real estate beginners
+- German language and terminology
+- Performance-optimized calculations
+- Offline-capable calculators where possible
+- Secure handling of financial data
+- NativeWind for consistent, responsive design
+
+## AI Chat Context
+
+The AI Assistant should:
+
+- Use German real estate terminology (Rendite, Eigenkapitalrendite, etc.)
+- Access user data from calculators
+- Consider local market conditions
+- Provide personalized investment recommendations
+- Explain complex Kennzahlen simply
+
+When addressing German real estate topics, use authentic terminology and consider local specifics like regional Mietpreisbremse, KfW-Förderungen, and tax Abschreibungsmodelle.
