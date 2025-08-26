@@ -45,6 +45,7 @@
         "projectId": "66fd37b1-818b-4238-bcb4-5d673fa45086"
       }
     },
-    "owner": "pauljasper.dev"
+    "owner": "pauljasper.dev",
+    "usesAppleSignIn": true
   }
 }

@@ -15,7 +15,8 @@
     "db:push": "sst shell -- bun --cwd packages/core db:push",
     "db:studio": "sst shell -- bun --cwd packages/core db:studio",
     "db:generate": "sst shell -- bun --cwd packages/core db:generate",
-    "db:migrate": "sst shell -- bun --cwd packages/core db:migrate"
+    "db:migrate": "sst shell -- bun --cwd packages/core db:migrate",
+    "auth:generate": "bun --cwd packages/core auth:generate"
   },
   "dependencies": {
     "sst": "^3.17.10"

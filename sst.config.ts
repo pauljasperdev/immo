@@ -21,16 +21,16 @@ export default $config({
     };
   },
   async run() {
-    const { router } = await import('./infra/router');
+    const { router, routerApi } = await import('./infra/router');
     await import('./infra/neon');
-    const { apiUrl } = await import('./infra/api');
+    const { api } = await import('./infra/api');
     await import('./infra/native');
 
     await import('./infra/transcribe');
 
     return {
       Router_ID: router.distributionID,
-      API_URL: apiUrl,
+      API_Router_ID: routerApi.distributionID,
     };
   },
   console: {

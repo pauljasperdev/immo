@@ -3,12 +3,15 @@
 import { secrets } from './secrets';
 import { isPermanentStage } from './utils';
 
-export const domain =
-  $app.stage === 'production'
-    ? 'mynewdomain.com' // TODO: on domain change, set CNAME records for CF distribution in new registrar
-    : $app.stage === 'dev'
-      ? 'immo.pauljasper.dev'
-      : `${$app.stage}.immo.pauljasper.dev`;
+export const baseUrl =
+  $app.stage === 'production' ? 'mynewdomain.com' : 'immo.pauljasper.dev';
+
+export const domain = isPermanentStage ? baseUrl : `${$app.stage}.${baseUrl}`;
+
+// eg. stage=paul: paul.api.immo.pauljasper.dev, stage=dev: api.immo.pauljasper.dev
+export const domainApi = isPermanentStage
+  ? `api.${baseUrl}`
+  : `${$app.stage}.api.${baseUrl}`;
 
 export const router = isPermanentStage
   ? new sst.aws.Router('Router', {
@@ -20,3 +23,14 @@ export const router = isPermanentStage
       },
     })
   : sst.aws.Router.get('Router', 'ENPQU7DO4APH7');
+
+export const routerApi = isPermanentStage
+  ? new sst.aws.Router('RouterApi', {
+      domain: {
+        name: domainApi,
+        aliases: [`*.${domainApi}`],
+        dns: false,
+        cert: secrets.CertArnApi.value,
+      },
+    })
+  : sst.aws.Router.get('RouterApi', 'EICZ7J2LTD46H');

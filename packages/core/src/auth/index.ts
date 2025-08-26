@@ -11,17 +11,19 @@ export const auth = betterAuth({
     provider: 'pg',
     schema,
   }),
-  trustedOrigins: [process.env.CORS_ORIGIN || '', 'immo-app://'],
+  trustedOrigins: ['immo-app://', 'https://appleid.apple.com', 'exp://'],
   secret: Resource.BetterAuthSecret.value,
   plugins: [expo()],
   socialProviders: {
-    google: {
-      clientId: Resource.GoogleClientId.value,
-      clientSecret: Resource.GoogleClientSecret.value,
-    },
+    // google: {
+    //   clientId: Resource.GoogleClientId.value,
+    //   clientSecret: Resource.GoogleClientSecret.value,
+    // },
     apple: {
-      clientId: Resource.AppleClientId.value,
-      clientSecret: Resource.AppleClientSecret.value,
+      clientId: Resource.AppleClientId.value as string,
+      clientSecret: Resource.AppleClientSecret.value as string,
+      appBundleIdentifier: Resource.AppleAppBundleIdentifier.value as string,
     },
   },
+  telemetry: { enabled: false },
 });

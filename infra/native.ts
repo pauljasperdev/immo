@@ -1,10 +1,10 @@
 // biome-ignore-all lint: SST is globally available
 
-import { api, apiUrl } from './api';
+import { domainApi } from './router';
 
 export const native = new sst.x.DevCommand('Native', {
   environment: {
-    EXPO_PUBLIC_SERVER_URL: apiUrl,
+    EXPO_PUBLIC_SERVER_URL: `https://${domainApi}`,
   },
   dev: {
     directory: 'apps/native',

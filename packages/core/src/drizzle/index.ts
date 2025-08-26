@@ -3,10 +3,16 @@ import { drizzle } from 'drizzle-orm/neon-http';
 import { Resource } from 'sst';
 import ws from 'ws';
 
-neonConfig.webSocketConstructor = ws;
+// biome-ignore lint/performance/noNamespaceImport: <>
+import * as authSchema from '../auth/auth.sql';
 
-// To work in edge environments (Cloudflare Workers, Vercel Edge, etc.), enable querying over fetch
+neonConfig.webSocketConstructor = ws;
 neonConfig.poolQueryViaFetch = true;
 
 const sql = neon(Resource.Neon.urlPooler);
-export const db = drizzle(sql);
+
+const schema = {
+  ...authSchema,
+};
+
+export const db = drizzle(sql, { schema });

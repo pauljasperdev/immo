@@ -1,7 +1,7 @@
 import '@/polyfills';
 import { DarkTheme, type Theme, ThemeProvider } from '@react-navigation/native';
 import { QueryClientProvider } from '@tanstack/react-query';
-import { Stack } from 'expo-router';
+import { Redirect, Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import '../global.css';
@@ -14,21 +14,15 @@ import { NAV_THEME } from '@/lib/constants';
 import { useColorScheme } from '@/lib/use-color-scheme';
 import { queryClient } from '@/utils/trpc';
 
+// import App from './index'; // Removed - using Stack directly
+
 const DARK_THEME: Theme = {
   ...DarkTheme,
   colors: NAV_THEME.dark,
 };
 
 function AuthenticatedApp() {
-  return (
-    <Stack>
-      <Stack.Screen name="home" options={{ headerShown: false }} />
-      <Stack.Screen
-        name="modal"
-        options={{ title: 'Modal', presentation: 'modal' }}
-      />
-    </Stack>
-  );
+  return <Stack />;
 }
 
 function UnauthenticatedApp() {
