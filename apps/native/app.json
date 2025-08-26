@@ -29,6 +29,9 @@
       "bundleIdentifier": "dev.pauljasper.immo",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
+      },
+      "entitlements": {
+        "com.apple.developer.applesignin": ["Default"]
       }
     },
     "android": {
