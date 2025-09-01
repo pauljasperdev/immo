@@ -1,30 +1,24 @@
 {
   "build": {
+    "development": {
+      "distribution": "internal",
+      "environment": "development"
+    },
     "preview": {
       "distribution": "internal",
       "ios": {
-        "resourceClass": "m-medium"
+        "resourceClass": "m-medium",
+        "simulator": true
       },
-      "env": {
-        "EXPO_PUBLIC_SERVER_URL": "$EXPO_PUBLIC_SERVER_URL"
-      }
+      "environment": "preview"
     },
-    "development": {
-      "distribution": "internal",
-      "ios": {
-        "resourceClass": "m-medium"
-      },
-      "env": {
-        "EXPO_PUBLIC_SERVER_URL": "$EXPO_PUBLIC_SERVER_URL"
-      }
-    },
+
     "production": {
       "ios": {
         "resourceClass": "m-medium"
       },
-      "env": {
-        "EXPO_PUBLIC_SERVER_URL": "$EXPO_PUBLIC_SERVER_URL"
-      }
+      "autoIncrement": true,
+      "environment": "production"
     }
   }
 }

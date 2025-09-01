@@ -4,11 +4,6 @@
     "slug": "immo-app",
     "version": "1.0.0",
     "scheme": "immo-app",
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/favicon.png"
-    },
     "plugins": ["expo-router", "expo-secure-store", "expo-web-browser"],
     "experiments": {
       "typedRoutes": true,
@@ -48,7 +43,6 @@
         "projectId": "66fd37b1-818b-4238-bcb4-5d673fa45086"
       }
     },
-    "owner": "pauljasper.dev",
-    "usesAppleSignIn": true
+    "owner": "pauljasper.dev"
   }
 }
