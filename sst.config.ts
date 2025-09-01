@@ -75,19 +75,19 @@ export default $config({
           const apiUrl = await $`pnpm run env:apiUrl`.text();
           const cleanApiUrl = apiUrl.trim();
 
-          const easProfile = { dev: 'preview', production: 'production' }[
-            stage
-          ];
+          // const easProfile = { dev: 'preview', production: 'production' }[
+          //   stage
+          // ];
+          const easProfile = { production: 'production' }[stage];
           if (easProfile) {
             await $`cd apps/native && eas init --id $EXPO_PRJECT_ID --non-interactive`;
             // Update EAS environment variable with the new URL
             await $`cd apps/native && eas env:update ${easProfile} --name EXPO_PUBLIC_SERVER_URL --value "${cleanApiUrl}" --visibility plaintext --non-interactive `;
             await $`cd apps/native && eas build --profile ${easProfile} --platform ios --non-interactive --no-wait`;
+            console.log(
+              `EAS build triggered successfully for stage: $SST_STAGE\nAPI URL set to: ${cleanApiUrl}`
+            );
           }
-
-          console.log(
-            `EAS build triggered successfully for stage: $SST_STAGE\nAPI URL set to: ${cleanApiUrl}`
-          );
         }
       },
     },
