@@ -2,13 +2,13 @@
   "name": "@immo/core",
   "type": "module",
   "scripts": {
-    "build": "bun run tsdown",
-    "check-types": "bun run tsc -b",
+    "build": "pnpm exec tsdown",
+    "check-types": "pnpm exec tsc -b",
     "compile": "bun build --compile --minify --sourcemap --bytecode ./src/index.ts --outfile server",
-    "db:push": "sst shell bun run drizzle-kit push",
-    "db:studio": "sst shell bun run drizzle-kit studio",
-    "db:generate": "sst shell bun run drizzle-kit generate",
-    "db:migrate": "sst shell bun run drizzle-kit migrate",
+    "db:push": "sst shell pnpm exec drizzle-kit push",
+    "db:studio": "sst shell pnpm exec drizzle-kit studio",
+    "db:generate": "sst shell pnpm exec drizzle-kit generate",
+    "db:migrate": "sst shell pnpm exec drizzle-kit migrate",
     "auth:generate": "sst shell -- npx @better-auth/cli generate --config ./src/auth/index.ts --output ./src/auth/auth.sql.ts"
   },
   "exports": {

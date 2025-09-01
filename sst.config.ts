@@ -59,29 +59,29 @@ export default $config({
       },
       async workflow({ $, event }) {
         const stage = await $`echo $SST_STAGE`.text();
-        await $`npm install -g eas-cli`;
-        await $`bun install`;
+        await $`npm install -g pnpm eas-cli`;
+        await $`pnpm install`;
 
         // EXPO_TOKEN set in sst console varaibles. no login needed.
 
         if (event.action === 'removed') {
-          await $`bun sst remove`;
+          await $`pnpm sst remove`;
         } else {
           // Deploy SST infrastructure first
-          await $`bun sst deploy`;
-          await $`bun db:migrate`;
+          await $`pnpm sst deploy`;
+          await $`pnpm run db:migrate`;
 
           // Get the API URL after deployment
-          const apiUrl = await $`bun env:apiUrl`.text();
+          const apiUrl = await $`pnpm run env:apiUrl`.text();
           const cleanApiUrl = apiUrl.trim();
 
           const easProfile = { dev: 'preview', production: 'production' }[
             stage
           ];
           if (easProfile) {
-            await $`cd apps/native && eas init --non-interactive`;
+            await $`cd apps/native && eas init --id $EXPO_PRJECT_ID --non-interactive`;
             // Update EAS environment variable with the new URL
-            await $`cd apps/native && eas env:create ${easProfile} --name EXPO_PUBLIC_SERVER_URL --value "${cleanApiUrl}" --visibility plaintext --non-interactive --force`;
+            await $`cd apps/native && eas env:update ${easProfile} --name EXPO_PUBLIC_SERVER_URL --value "${cleanApiUrl}" --visibility plaintext --non-interactive `;
             await $`cd apps/native && eas build --profile ${easProfile} --platform ios --non-interactive --no-wait`;
           }
 

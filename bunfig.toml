@@ -1,4 +1,0 @@
-[install]
-# linker = "isolated"
-exact = true
-saveTextLockfile = true

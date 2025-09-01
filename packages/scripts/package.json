@@ -2,7 +2,7 @@
   "name": "scripts",
   "type": "module",
   "scripts": {
-    "env:apiUrl": "bun run tsx src/env/apiUrl.ts"
+    "env:apiUrl": "pnpm exec tsx src/env/apiUrl.ts"
   },
   "dependencies": {
     "sst": "*"

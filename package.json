@@ -9,14 +9,14 @@
   "scripts": {
     "check": "biome check --write .",
     "dev": "sst dev",
-    "check-types": "bun --recursive check-types",
-    "env:apiUrl": "sst shell -- bun --cwd packages/scripts env:apiUrl",
-    "build:native": "EXPO_PUBLIC_SERVER_URL=$(bun env:apiUrl) bun --cwd apps/native build",
-    "db:push": "sst shell -- bun --cwd packages/core db:push",
-    "db:studio": "sst shell -- bun --cwd packages/core db:studio",
-    "db:generate": "sst shell -- bun --cwd packages/core db:generate",
-    "db:migrate": "sst shell -- bun --cwd packages/core db:migrate",
-    "auth:generate": "bun --cwd packages/core auth:generate"
+    "check-types": "pnpm --recursive check-types",
+    "env:apiUrl": "sst shell -- pnpm --filter scripts env:apiUrl",
+    "build:native": "EXPO_PUBLIC_SERVER_URL=$(pnpm env:apiUrl) pnpm --filter native build",
+    "db:push": "sst shell -- pnpm --filter @immo/core db:push",
+    "db:studio": "sst shell -- pnpm --filter @immo/core db:studio",
+    "db:generate": "sst shell -- pnpm --filter @immo/core db:generate",
+    "db:migrate": "sst shell -- pnpm --filter @immo/core db:migrate",
+    "auth:generate": "pnpm --filter @immo/core auth:generate"
   },
   "dependencies": {
     "sst": "^3.17.10"
@@ -25,5 +25,12 @@
     "@biomejs/biome": "2.1.2",
     "ultracite": "5.1.1"
   },
-  "packageManager": "bun@1.2.2"
+  "packageManager": "pnpm@8.15.0",
+  "pnpm": {
+    "overrides": {
+      "react": "19.0.0",
+      "react-dom": "19.0.0",
+      "react-native": "0.79.5"
+    }
+  }
 }
