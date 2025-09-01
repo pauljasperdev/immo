@@ -11,12 +11,15 @@
     "dev": "sst dev",
     "check-types": "pnpm --recursive check-types",
     "env:apiUrl": "sst shell -- pnpm --filter scripts env:apiUrl",
-    "build:native": "EXPO_PUBLIC_SERVER_URL=$(pnpm env:apiUrl) pnpm --filter native build",
     "db:push": "sst shell -- pnpm --filter @immo/core db:push",
     "db:studio": "sst shell -- pnpm --filter @immo/core db:studio",
     "db:generate": "sst shell -- pnpm --filter @immo/core db:generate",
     "db:migrate": "sst shell -- pnpm --filter @immo/core db:migrate",
-    "auth:generate": "pnpm --filter @immo/core auth:generate"
+    "auth:generate": "pnpm --filter @immo/core auth:generate",
+    "build:pre:local": "cd apps/native && eas build --profile preview --platform ios --local  --output ./build/preview.tar.gz && cd -",
+    "build:pre-sim:local": "cd apps/native && eas build --profile preview-simulator --platform ios --local  --output ./build/preview-simulator.tar.gz && cd -",
+    "build:dev:local": "cd apps/native && eas build --profile development--platform ios --local  --output ./build/development.tar.gz && cd -",
+    "build:pre": "cd apps/native && eas build --profile preview --platform ios --non-interactive --no-wait && cd -"
   },
   "dependencies": {
     "sst": "^3.17.10"
