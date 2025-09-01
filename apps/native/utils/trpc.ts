@@ -1,15 +1,15 @@
+import type { AppRouter } from '@immo/server/src/routers';
 import { QueryClient } from '@tanstack/react-query';
 import { createTRPCClient, httpBatchLink } from '@trpc/client';
 import { createTRPCOptionsProxy } from '@trpc/tanstack-react-query';
 import { authClient } from '@/lib/auth-client';
-import type { AppRouter } from '../../server/src/routers';
 
 export const queryClient = new QueryClient();
 
 const trpcClient = createTRPCClient<AppRouter>({
   links: [
     httpBatchLink({
-      url: `${process.env.EXPO_PUBLIC_SERVER_URL}trpc`,
+      url: `${process.env.EXPO_PUBLIC_SERVER_URL?.replace(/\/$/, '')}/trpc`,
       headers() {
         const headers = new Map<string, string>();
         const cookies = authClient.getCookie();
