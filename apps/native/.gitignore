@@ -11,6 +11,9 @@ npm-debug.*
 web-build/
 # expo router
 expo-env.d.ts
+ios/certs/*
+credentials.json
+build/
 
 .env
 .cache
