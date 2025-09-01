@@ -4,10 +4,11 @@ import { domainApi } from './router';
 
 export const native = new sst.x.DevCommand('Native', {
   environment: {
-    EXPO_PUBLIC_SERVER_URL: `https://${domainApi}`,
+    EXPO_PUBLIC_SERVER_URL: `https://${domainApi}/`,
   },
   dev: {
     directory: 'apps/native',
-    command: 'bun dev',
+    command: 'pnpm dev',
+    // command: 'bun dev:prod',
   },
 });
