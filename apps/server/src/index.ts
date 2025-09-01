@@ -50,4 +50,16 @@ app.get('/', (c) => {
   return c.text('OK');
 });
 
+app.get('/test', (c) => {
+  return c.json({
+    message: 'Test endpoint working!',
+    timestamp: new Date().toISOString(),
+    status: 'success',
+    data: {
+      test: true,
+      count: 42,
+      items: ['apple', 'banana', 'orange'],
+    },
+  });
+});
 export const handler = process.env.SST_LIVE ? handle(app) : streamHandle(app);
