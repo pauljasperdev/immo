@@ -16,14 +16,12 @@
     "db:generate": "sst shell -- pnpm --filter @immo/core db:generate",
     "db:migrate": "sst shell -- pnpm --filter @immo/core db:migrate",
     "auth:generate": "pnpm --filter @immo/core auth:generate",
-    "build:pre:local": "cd apps/native && eas build --profile preview --platform ios --local  --output ./build/preview.tar.gz && cd -",
-    "build:pre-sim:local": "cd apps/native && eas build --profile preview-simulator --platform ios --local  --output ./build/preview-simulator.tar.gz && cd -",
-    "build:dev:local": "cd apps/native && eas build --profile development--platform ios --local  --output ./build/development.tar.gz && cd -",
-    "build:dev-sim:local": "cd apps/native && eas build --profile development-simulator --platform ios --local  --output ./build/development-simulator.tar.gz && cd -",
+    "build:pre:local": "cd apps/native && eas build --profile preview-simulator --platform ios --local  --output ./build/preview-simulator.tar.gz && cd -",
+    "build:dev:local": "cd apps/native && eas build --profile development-simulator --platform ios --local  --output ./build/development-simulator.tar.gz && cd -",
     "build:pre": "cd apps/native && eas build --profile preview --platform ios --non-interactive --no-wait && cd -"
   },
   "dependencies": {
-    "sst": "^3.17.12"
+    "sst": "3.17.12"
   },
   "devDependencies": {
     "@biomejs/biome": "2.1.2",
@@ -34,7 +32,8 @@
     "overrides": {
       "react": "19.0.0",
       "react-dom": "19.0.0",
-      "react-native": "0.79.5"
+      "react-native": "0.79.5",
+      "sst": "3.17.12"
     }
   }
 }

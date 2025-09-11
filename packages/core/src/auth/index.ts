@@ -1,6 +1,7 @@
 import { expo } from '@better-auth/expo';
 import { betterAuth } from 'better-auth';
 import { drizzleAdapter } from 'better-auth/adapters/drizzle';
+// import { emailOTP } from 'better-auth/plugins';
 import { Resource } from 'sst';
 import { db } from '../drizzle';
 // biome-ignore lint/performance/noNamespaceImport: <drizzle schema docs>
@@ -13,6 +14,9 @@ export const auth = betterAuth({
   }),
   trustedOrigins: ['immo-app://', 'https://appleid.apple.com', 'exp://'],
   secret: Resource.BetterAuthSecret.value,
+  emailAndPassword: {
+    enabled: true,
+  },
   plugins: [expo()],
   socialProviders: {
     // google: {

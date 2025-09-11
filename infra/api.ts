@@ -15,7 +15,7 @@ export const api = new sst.aws.Function('Api', {
   url: {
     router: { instance: routerApi, domain: domainApi },
   },
-  streaming: true,
+  streaming: $dev ? false : true,
   handler: 'apps/server/src/index.handler',
   environment: {
     GOOGLE_GENERATIVE_AI_API_KEY: secrets.GoogleGenAiApiKey.value,
