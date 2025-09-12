@@ -1,4 +1,9 @@
-import { protectedProcedure, publicProcedure, router } from '../trpc/trpc';
+import {
+  createCallerFactory,
+  protectedProcedure,
+  publicProcedure,
+  router,
+} from '../trpc/trpc';
 
 export const appRouter = router({
   healthCheck: publicProcedure.query(() => {
@@ -12,3 +17,5 @@ export const appRouter = router({
   }),
 });
 export type AppRouter = typeof appRouter;
+
+export const createCaller = createCallerFactory(appRouter);
