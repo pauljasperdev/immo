@@ -24,6 +24,7 @@ export function SignIn() {
     await authClient.signIn.social(
       {
         provider: 'apple',
+        callbackURL: '/',
       },
       {
         onError: (err) => {
