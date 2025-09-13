@@ -4,14 +4,19 @@ import { DefaultChatTransport } from 'ai';
 import { fetch as expoFetch } from 'expo/fetch';
 import { useEffect, useRef, useState } from 'react';
 import {
+  Keyboard,
   KeyboardAvoidingView,
   Platform,
-  ScrollView,
+  type ScrollView,
   Text,
   TextInput,
   TouchableOpacity,
   View,
 } from 'react-native';
+import {
+  KeyboardAwareScrollView,
+  KeyboardToolbar,
+} from 'react-native-keyboard-controller';
 import { Container } from '@/components/container';
 
 const TRAILING_SLASH_REGEX = /\/$/;
@@ -58,6 +63,7 @@ export default function AIScreen() {
     if (value) {
       sendMessage({ text: value });
       setInput('');
+      Keyboard.dismiss();
     }
   };
 
@@ -78,9 +84,12 @@ export default function AIScreen() {
 
   return (
     <Container>
-      <KeyboardAvoidingView
-        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+      <KeyboardAwareScrollView
+        bottomOffset={40}
         className="flex-1"
+        contentContainerStyle={{ flexGrow: 1 }}
+        keyboardDismissMode="interactive"
+        keyboardShouldPersistTaps="handled"
       >
         <View className="flex-1 px-4 py-6">
           <View className="mb-6">
@@ -92,11 +101,7 @@ export default function AIScreen() {
             </Text>
           </View>
 
-          <ScrollView
-            className="mb-4 flex-1"
-            ref={scrollViewRef}
-            showsVerticalScrollIndicator={false}
-          >
+          <View className="mb-4 flex-1">
             {messages.length === 0 ? (
               <View className="flex-1 items-center justify-center">
                 <Text className="text-center text-lg text-muted-foreground">
@@ -107,7 +112,7 @@ export default function AIScreen() {
               <View className="space-y-4">
                 {messages.map((message) => (
                   <View
-                    className={`rounded-lg p-3 ${
+                    className={`my-1 rounded-lg p-3 ${
                       message.role === 'user'
                         ? 'ml-8 bg-primary/10'
                         : 'mr-8 border border-border bg-card'
@@ -143,7 +148,7 @@ export default function AIScreen() {
                 ))}
               </View>
             )}
-          </ScrollView>
+          </View>
 
           <View className="border-border border-t pt-4">
             <View className="flex-row items-end space-x-2">
@@ -153,7 +158,11 @@ export default function AIScreen() {
                 onChangeText={setInput}
                 onSubmitEditing={(e) => {
                   e.preventDefault();
-                  onSubmit();
+                  const value = input.trim();
+                  if (value) {
+                    sendMessage({ text: value });
+                    setInput('');
+                  }
                 }}
                 placeholder="Type your message..."
                 placeholderTextColor="hsl(var(--muted-foreground))"
@@ -179,7 +188,7 @@ export default function AIScreen() {
             </View>
           </View>
         </View>
-      </KeyboardAvoidingView>
+      </KeyboardAwareScrollView>
     </Container>
   );
 }

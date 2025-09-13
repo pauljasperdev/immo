@@ -7,14 +7,13 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import '../global.css';
 import React, { useRef } from 'react';
 import { Platform, Text, View } from 'react-native';
+import { KeyboardProvider } from 'react-native-keyboard-controller';
 import { SignIn } from '@/components/sign-in';
 import { setAndroidNavigationBar } from '@/lib/android-navigation-bar';
 import { authClient } from '@/lib/auth-client';
 import { NAV_THEME } from '@/lib/constants';
 import { useColorScheme } from '@/lib/use-color-scheme';
 import { queryClient } from '@/utils/trpc';
-
-// import App from './index'; // Removed - using Stack directly
 
 const DARK_THEME: Theme = {
   ...DarkTheme,
@@ -73,10 +72,12 @@ export default function RootLayout() {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider value={DARK_THEME}>
-        <StatusBar style="light" />
-        <GestureHandlerRootView className="bg-background" style={{ flex: 1 }}>
-          {session?.user ? <AuthenticatedApp /> : <UnauthenticatedApp />}
-        </GestureHandlerRootView>
+        <KeyboardProvider>
+          <StatusBar style="light" />
+          <GestureHandlerRootView className="bg-background" style={{ flex: 1 }}>
+            {session?.user ? <AuthenticatedApp /> : <UnauthenticatedApp />}
+          </GestureHandlerRootView>
+        </KeyboardProvider>
       </ThemeProvider>
     </QueryClientProvider>
   );

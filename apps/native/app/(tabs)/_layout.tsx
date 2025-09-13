@@ -9,6 +9,7 @@ export default function TabLayout() {
         headerShown: false,
         tabBarActiveTintColor: NAV_THEME.dark.primary,
         tabBarInactiveTintColor: NAV_THEME.dark.mutedForeground,
+        tabBarHideOnKeyboard: true,
         tabBarStyle: {
           backgroundColor: NAV_THEME.dark.background,
           borderTopColor: NAV_THEME.dark.border,
