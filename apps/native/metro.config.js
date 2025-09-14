@@ -8,6 +8,7 @@ const config = withTurborepoManagedCache(
   withNativeWind(getDefaultConfig(__dirname), {
     input: './global.css',
     configPath: './tailwind.config.js',
+    inlineRem: 16,
   })
 );
 
@@ -16,6 +17,7 @@ config.resolver.unstable_enablePackageExports = true;
 module.exports = config;
 
 /**
+ *
  * Move the Metro cache to the `.cache/metro` folder.
  * If you have any environment variables, you can configure Turborepo to invalidate it when needed.
  *

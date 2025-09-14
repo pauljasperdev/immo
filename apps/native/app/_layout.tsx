@@ -5,13 +5,14 @@ import { Redirect, Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import '../global.css';
+import { PortalHost } from '@rn-primitives/portal';
 import React, { useRef } from 'react';
 import { Platform, Text, View } from 'react-native';
 import { KeyboardProvider } from 'react-native-keyboard-controller';
 import { SignIn } from '@/components/sign-in';
 import { setAndroidNavigationBar } from '@/lib/android-navigation-bar';
 import { authClient } from '@/lib/auth-client';
-import { NAV_THEME } from '@/lib/constants';
+import { NAV_THEME } from '@/lib/theme';
 import { useColorScheme } from '@/lib/use-color-scheme';
 import { queryClient } from '@/utils/trpc';
 
@@ -76,6 +77,7 @@ export default function RootLayout() {
           <StatusBar style="light" />
           <GestureHandlerRootView className="bg-background" style={{ flex: 1 }}>
             {session?.user ? <AuthenticatedApp /> : <UnauthenticatedApp />}
+            <PortalHost />
           </GestureHandlerRootView>
         </KeyboardProvider>
       </ThemeProvider>

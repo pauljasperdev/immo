@@ -7,6 +7,7 @@ import {
 } from '@react-navigation/drawer';
 import { Drawer } from 'expo-router/drawer';
 import { View } from 'react-native';
+import { NAV_THEME } from '@/lib/theme';
 
 function CustomDrawerContent(props: DrawerContentComponentProps) {
   return (
@@ -21,14 +22,19 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
       </View>
 
       {/* Settings at the bottom */}
-      <View>
+      <View className="text-primary">
         <DrawerItem
-          icon={({ color, size }) => (
-            <FontAwesome color={color} name="cog" size={size} />
+          icon={({ size }) => (
+            <FontAwesome
+              color={NAV_THEME.dark.colors.text}
+              name="cog"
+              size={size}
+            />
           )}
           label="Settings"
           labelStyle={{
             fontWeight: '600',
+            color: NAV_THEME.dark.colors.text,
           }}
           onPress={() => props.navigation.navigate('settings')}
         />
@@ -43,6 +49,8 @@ export default function HomeDrawerLayout() {
       drawerContent={(props) => <CustomDrawerContent {...props} />}
       screenOptions={{
         headerShown: true,
+        drawerActiveTintColor: NAV_THEME.dark.colors.primary,
+        drawerInactiveTintColor: NAV_THEME.dark.colors.text,
         drawerStyle: {
           width: 280,
         },

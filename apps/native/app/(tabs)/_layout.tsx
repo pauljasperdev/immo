@@ -1,18 +1,18 @@
 import { Tabs } from 'expo-router';
 import { TabBarIcon } from '@/components/tabbar-icon';
-import { NAV_THEME } from '@/lib/constants';
+import { NAV_THEME } from '@/lib/theme';
 
 export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: NAV_THEME.dark.primary,
-        tabBarInactiveTintColor: NAV_THEME.dark.mutedForeground,
+        tabBarActiveTintColor: NAV_THEME.dark.colors.primary,
+        tabBarInactiveTintColor: NAV_THEME.dark.colors.text,
         tabBarHideOnKeyboard: true,
         tabBarStyle: {
-          backgroundColor: NAV_THEME.dark.background,
-          borderTopColor: NAV_THEME.dark.border,
+          backgroundColor: NAV_THEME.dark.colors.background,
+          borderTopColor: NAV_THEME.dark.colors.border,
         },
       }}
     >
