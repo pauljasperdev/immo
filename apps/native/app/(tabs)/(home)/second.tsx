@@ -1,48 +1,97 @@
-import { View } from 'react-native';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import { Keyboard, Text, View } from 'react-native';
+import {
+  KeyboardAwareScrollView,
+  KeyboardToolbar,
+} from 'react-native-keyboard-controller';
+import { z } from 'zod';
 import { Button } from '@/components/ui/button';
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Text } from '@/components/ui/text';
+
+const formSchema = z.object({
+  kaufpreis: z.number().min(1, {
+    message: 'Kaufpreis must be at least 1.',
+  }),
+  miete: z.number().min(1, {
+    message: 'Miete must be at least 1.',
+  }),
+});
 
 export default function SecondScreen() {
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      kaufpreis: 0,
+      miete: 0,
+    },
+  });
+
+  function onSubmit(values: z.infer<typeof formSchema>) {
+    console.log(values);
+  }
+
   return (
-    <Card className="w-full max-w-sm">
-      <CardHeader className="flex-row">
-        <View className="flex-1 gap-1.5">
-          <CardTitle>Subscribe to our newsletter</CardTitle>
-          <CardDescription>
-            Enter your details to receive updates and tips
-          </CardDescription>
-        </View>
-      </CardHeader>
-      <CardContent>
-        <View className="w-full justify-center gap-4">
-          <View className="gap-2">
-            <Label htmlFor="email">Email</Label>
-            <Input id="email" placeholder="m@example.com" />
+    <>
+      <KeyboardAwareScrollView>
+        <Form {...form}>
+          <View className="flex-row gap-4 p-4">
+            <View className="w-1/4">
+              <FormField
+                control={form.control}
+                name="kaufpreis"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Kaufpreis</FormLabel>
+                    <FormControl>
+                      <Input
+                        keyboardType="number-pad"
+                        onBlur={field.onBlur}
+                        onChangeText={field.onChange}
+                        placeholder="250000"
+                        value={field.value.toString()}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </View>
+            <FormField
+              control={form.control}
+              name="miete"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Miete</FormLabel>
+                  <FormControl>
+                    <Input
+                      keyboardType="number-pad"
+                      onBlur={field.onBlur}
+                      onChangeText={field.onChange}
+                      placeholder="1000"
+                      value={field.value.toString()}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
           </View>
-          <View className="gap-2">
-            <Label htmlFor="name">Name</Label>
-            <Input id="name" placeholder="John Doe" />
-          </View>
-        </View>
-      </CardContent>
-      <CardFooter className="flex-col gap-2">
-        <Button className="w-full">
-          <Text>Subscribe</Text>
-        </Button>
-        <Button className="w-full" variant="outline">
-          <Text>Later</Text>
-        </Button>
-      </CardFooter>
-    </Card>
+          <Button onPress={form.handleSubmit(onSubmit)}>
+            <Text>Submit</Text>
+          </Button>
+        </Form>
+      </KeyboardAwareScrollView>
+      <KeyboardToolbar />
+    </>
   );
 }
