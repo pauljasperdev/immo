@@ -7,7 +7,7 @@ import {
 } from '@react-navigation/drawer';
 import { Drawer } from 'expo-router/drawer';
 import { View } from 'react-native';
-import { NAV_THEME } from '@/lib/theme';
+import { NAV_THEME } from '@/src/lib/theme';
 
 function CustomDrawerContent(props: DrawerContentComponentProps) {
   return (

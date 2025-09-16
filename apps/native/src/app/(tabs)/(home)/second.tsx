@@ -6,7 +6,7 @@ import {
   KeyboardToolbar,
 } from 'react-native-keyboard-controller';
 import { z } from 'zod';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/src/components/ui/button';
 import {
   Form,
   FormControl,
@@ -15,8 +15,8 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
+} from '@/src/components/ui/form';
+import { Input } from '@/src/components/ui/input';
 
 const formSchema = z.object({
   kaufpreis: z.number().min(1, {

@@ -6,8 +6,8 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import { authClient } from '@/lib/auth-client';
-import { queryClient } from '@/utils/trpc';
+import { authClient } from '@/src/lib/auth-client';
+import { queryClient } from '@/src/utils/trpc';
 
 export function SignUp() {
   const [name, setName] = useState('');

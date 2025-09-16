@@ -1,6 +1,6 @@
-import { cn } from '@/lib/utils';
 import * as LabelPrimitive from '@rn-primitives/label';
 import { Platform } from 'react-native';
+import { cn } from '@/src/lib/utils';
 
 function Label({
   className,
@@ -20,14 +20,15 @@ function Label({
         }),
         disabled && 'opacity-50'
       )}
-      onPress={onPress}
+      disabled={disabled}
       onLongPress={onLongPress}
+      onPress={onPress}
       onPressIn={onPressIn}
       onPressOut={onPressOut}
-      disabled={disabled}>
+    >
       <LabelPrimitive.Text
         className={cn(
-          'text-foreground text-sm font-medium',
+          'font-medium text-foreground text-sm',
           Platform.select({ web: 'leading-none' }),
           className
         )}

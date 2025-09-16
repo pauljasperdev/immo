@@ -8,9 +8,9 @@ import {
   useFormContext,
 } from 'react-hook-form';
 import { View } from 'react-native';
-import { Label } from '@/components/ui/label';
-import { Text } from '@/components/ui/text';
-import { cn } from '@/lib/utils';
+import { Label } from '@/src/components/ui/label';
+import { Text } from '@/src/components/ui/text';
+import { cn } from '@/src/lib/utils';
 
 // Form Provider Component
 const Form = FormProvider;
