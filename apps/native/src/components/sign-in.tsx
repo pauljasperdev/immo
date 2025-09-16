@@ -9,7 +9,7 @@ import {
   View,
 } from 'react-native';
 import { authClient } from '@/src/lib/auth-client';
-import { queryClient } from '@/src/utils/trpc';
+import { queryClient } from '@/src/lib/trpc';
 
 export function SignIn() {
   const [isLoading, setIsLoading] = useState(false);

@@ -4,7 +4,7 @@ import { Container } from '@/src/components/container';
 import { SignIn } from '@/src/components/sign-in';
 import { SignUp } from '@/src/components/sign-up';
 import { authClient } from '@/src/lib/auth-client';
-import { queryClient, trpc } from '@/src/utils/trpc';
+import { queryClient, trpc } from '@/src/lib/trpc';
 
 export default function Settings() {
   const healthCheck = useQuery(trpc.healthCheck.queryOptions());

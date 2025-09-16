@@ -13,8 +13,8 @@ import { SignIn } from '@/src/components/sign-in';
 import { setAndroidNavigationBar } from '@/src/lib/android-navigation-bar';
 import { authClient } from '@/src/lib/auth-client';
 import { NAV_THEME } from '@/src/lib/theme';
+import { queryClient } from '@/src/lib/trpc';
 import { useColorScheme } from '@/src/lib/use-color-scheme';
-import { queryClient } from '@/src/utils/trpc';
 
 const DARK_THEME: Theme = {
   ...DarkTheme,
