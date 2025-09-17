@@ -1,12 +1,12 @@
+import { cn } from '@/src/lib/utils';
 import * as Slot from '@rn-primitives/slot';
 import { cva, type VariantProps } from 'class-variance-authority';
 import * as React from 'react';
 import { Platform, Text as RNText, type Role } from 'react-native';
-import { cn } from '@/src/lib/utils';
 
 const textVariants = cva(
   cn(
-    'text-base text-foreground',
+    'text-foreground text-base',
     Platform.select({
       web: 'select-text',
     })

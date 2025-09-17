@@ -17,7 +17,7 @@ import {
   KeyboardAwareScrollView,
   KeyboardToolbar,
 } from 'react-native-keyboard-controller';
-import { Container } from '@/src/components/container';
+import { Container } from '@/components/container';
 
 const TRAILING_SLASH_REGEX = /\/$/;
 

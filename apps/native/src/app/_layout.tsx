@@ -9,12 +9,12 @@ import { PortalHost } from '@rn-primitives/portal';
 import React, { useRef } from 'react';
 import { Platform, Text, View } from 'react-native';
 import { KeyboardProvider } from 'react-native-keyboard-controller';
-import { SignIn } from '@/src/components/sign-in';
-import { setAndroidNavigationBar } from '@/src/lib/android-navigation-bar';
-import { authClient } from '@/src/lib/auth-client';
-import { NAV_THEME } from '@/src/lib/theme';
-import { queryClient } from '@/src/lib/trpc';
-import { useColorScheme } from '@/src/lib/use-color-scheme';
+import { SignIn } from '@/components/sign-in';
+import { setAndroidNavigationBar } from '@/lib/android-navigation-bar';
+import { authClient } from '@/lib/auth-client';
+import { NAV_THEME } from '@/lib/theme';
+import { queryClient } from '@/lib/trpc';
+import { useColorScheme } from '@/lib/use-color-scheme';
 
 const DARK_THEME: Theme = {
   ...DarkTheme,

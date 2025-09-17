@@ -1,6 +1,6 @@
 import { Tabs } from 'expo-router';
-import { TabBarIcon } from '@/src/components/tabbar-icon';
-import { NAV_THEME } from '@/src/lib/theme';
+import { TabBarIcon } from '@/components/tabbar-icon';
+import { NAV_THEME } from '@/lib/theme';
 
 export default function TabLayout() {
   return (
