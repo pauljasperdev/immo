@@ -12,19 +12,17 @@
     "auth:generate": "sst shell -- npx @better-auth/cli generate --config ./src/auth/index.ts --output ./src/auth/auth.sql.ts"
   },
   "exports": {
-    "./*": [
-      "./src/*/index.ts"
-    ],
-    "./utils/*": [
-      "./src/utils/*.ts"
-    ]
+    "./*": "./src/*.ts",
+    "./auth": "./src/auth/index.ts",
+    "./drizzle": "./src/drizzle/index.ts",
+    "./property": "./src/property/index.ts",
+    "./utils": "./src/utils/index.ts"
   },
   "dependencies": {
     "@better-auth/expo": "^1.3.7",
     "@neondatabase/serverless": "^1.0.1",
     "better-auth": "^1.3.7",
     "drizzle-orm": "^0.44.2",
-    "expo-dev-client": "~5.2.4",
     "neverthrow": "^8.2.0",
     "sst": "*",
     "ws": "^8.18.3",

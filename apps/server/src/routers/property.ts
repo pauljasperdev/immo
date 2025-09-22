@@ -1,3 +1,4 @@
+import { NotFoundError } from '@immo/core/errors';
 import {
   createProperty,
   deletePropertyById,
@@ -5,7 +6,6 @@ import {
   readPropertyById,
   updatePropertyById,
 } from '@immo/core/property';
-import { NotFoundError } from '@immo/core/utils/errors';
 import { TRPCError } from '@trpc/server';
 import z from 'zod';
 import { protectedProcedure, router } from '../trpc/trpc';

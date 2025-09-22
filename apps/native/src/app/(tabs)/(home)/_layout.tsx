@@ -7,15 +7,22 @@ import {
 } from '@react-navigation/drawer';
 import { Drawer } from 'expo-router/drawer';
 import { View } from 'react-native';
-import { NAV_THEME } from '@/src/lib/theme';
+import { CreatePropertyButton } from '@/components/create-property';
+import { NAV_THEME } from '@/lib/theme';
 
 function CustomDrawerContent(props: DrawerContentComponentProps) {
   return (
     <DrawerContentScrollView
       {...props}
       className="flex-1 bg-background"
-      contentContainerStyle={{ flexGrow: 1 }}
+      contentContainerStyle={{ flexGrow: 1, paddingTop: 0 }}
     >
+      {/* Create Property Component at the top */}
+      <View className="flex-row items-center justify-between border-border border-b p-4">
+        {/* <SelectProperty properties={[]} /> */}
+        <CreatePropertyButton navigateTo="/(tabs)/(home)/property/create" />
+      </View>
+
       {/* Main navigation items */}
       <View className="flex-1">
         <DrawerItemList {...props} />

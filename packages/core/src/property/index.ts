@@ -6,7 +6,7 @@ import {
   DeleteError,
   NotFoundError,
   UpdateError,
-} from '../utils/errors';
+} from '../errors';
 import { type Property, property } from './property.sql';
 
 export const createProperty = ({

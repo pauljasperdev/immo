@@ -30,9 +30,6 @@
   "packageManager": "pnpm@10.15.0",
   "pnpm": {
     "overrides": {
-      "react": "19.0.0",
-      "react-dom": "19.0.0",
-      "react-native": "0.79.5",
       "sst": "3.17.12"
     }
   }

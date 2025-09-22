@@ -8,7 +8,7 @@ import {
   varchar,
 } from 'drizzle-orm/pg-core';
 import { user } from '../auth/auth.sql';
-import { generatePublicId } from '../utils/publicId';
+import { generatePublicId } from '../public-id';
 
 export const property = pgTable(
   'property',
