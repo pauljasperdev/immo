@@ -19,7 +19,16 @@
       "!**/.source"
     ]
   },
-  "extends": [
-    "ultracite"
-  ]
+  "extends": ["ultracite"],
+  "linter": {
+    "rules": {
+      "suspicious": {
+        "noConsole": {
+          "options": {
+            "allow": ["assert", "error", "info", "warn"]
+          }
+        }
+      }
+    }
+  }
 }

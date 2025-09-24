@@ -46,8 +46,9 @@ export default function RootLayout() {
   const [isColorSchemeLoaded, setIsColorSchemeLoaded] = React.useState(false);
   const { data: session, isPending } = authClient.useSession();
 
-  console.log('session', { session });
-  console.log('session.user', session?.user);
+  session?.user
+    ? console.log('user signed in', session?.user)
+    : console.log('user signed out');
 
   useIsomorphicLayoutEffect(() => {
     if (hasMounted.current) {
