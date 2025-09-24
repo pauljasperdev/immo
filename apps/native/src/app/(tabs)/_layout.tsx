@@ -24,7 +24,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="(learn)"
         options={{
           title: 'Explore',
           tabBarIcon: ({ color }) => (
@@ -33,7 +33,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="ai"
+        name="(chat)"
         options={{
           title: 'AI',
           tabBarIcon: ({ color }) => <TabBarIcon color={color} name="bold" />,

@@ -7,46 +7,49 @@ import {
 } from '@react-navigation/drawer';
 import { Drawer } from 'expo-router/drawer';
 import { View } from 'react-native';
+import { Container } from '@/components/container';
 import { CreatePropertyButton } from '@/components/create-property';
 import { NAV_THEME } from '@/lib/theme';
 
 function CustomDrawerContent(props: DrawerContentComponentProps) {
   return (
-    <DrawerContentScrollView
-      {...props}
-      className="flex-1 bg-background"
-      contentContainerStyle={{ flexGrow: 1, paddingTop: 0 }}
-    >
-      {/* Create Property Component at the top */}
-      <View className="flex-row items-center justify-between border-border border-b p-4">
-        {/* <SelectProperty properties={[]} /> */}
-        <CreatePropertyButton navigateTo="/(tabs)/(home)/property/create" />
-      </View>
+    <Container>
+      <DrawerContentScrollView
+        {...props}
+        className="flex-1 bg-background"
+        contentContainerStyle={{ flexGrow: 1, paddingTop: 0 }}
+      >
+        {/* Create Property Component at the top */}
+        <View className="flex-row items-center justify-between border-border border-b p-4">
+          {/* <SelectProperty properties={[]} /> */}
+          <CreatePropertyButton navigateTo="/(tabs)/(home)/(_property)/create" />
+        </View>
 
-      {/* Main navigation items */}
-      <View className="flex-1">
-        <DrawerItemList {...props} />
-      </View>
+        {/* Main navigation items */}
+        <View className="flex-1">
+          <DrawerItemList {...props} />
+        </View>
 
-      {/* Settings at the bottom */}
-      <View className="text-primary">
-        <DrawerItem
-          icon={({ size }) => (
-            <FontAwesome
-              color={NAV_THEME.dark.colors.text}
-              name="cog"
-              size={size}
-            />
-          )}
-          label="Settings"
-          labelStyle={{
-            fontWeight: '600',
-            color: NAV_THEME.dark.colors.text,
-          }}
-          onPress={() => props.navigation.navigate('settings')}
-        />
-      </View>
-    </DrawerContentScrollView>
+        {/* Settings at the bottom */}
+        <View className="text-primary">
+          <DrawerItem
+            icon={({ size }) => (
+              <FontAwesome
+                color={NAV_THEME.dark.colors.text}
+                name="cog"
+                size={size}
+              />
+            )}
+            label="Settings"
+            labelStyle={{
+              fontWeight: '600',
+              color: NAV_THEME.dark.colors.text,
+            }}
+            onPress={() => props.navigation.navigate('settings')}
+          />
+        </View>
+      </DrawerContentScrollView>
+    </Container>
   );
 }
 
@@ -85,6 +88,12 @@ export default function HomeDrawerLayout() {
         name="settings"
         options={{
           title: 'Settings',
+          drawerItemStyle: { display: 'none' },
+        }}
+      />
+      <Drawer.Screen
+        name="(_property)"
+        options={{
           drawerItemStyle: { display: 'none' },
         }}
       />

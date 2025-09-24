@@ -22,7 +22,7 @@ const DARK_THEME: Theme = {
 };
 
 function AuthenticatedApp() {
-  return <Stack />;
+  return <Stack screenOptions={{ headerShown: false }} />;
 }
 
 function UnauthenticatedApp() {
