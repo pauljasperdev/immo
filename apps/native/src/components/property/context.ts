@@ -1,5 +1,6 @@
 import type { Property as PropertyType } from '@immo/core/property/property.sql';
 import { createContext, useContext } from 'react';
+import type { ModalState } from './modal';
 
 export type Property = Omit<
   PropertyType,
@@ -15,6 +16,8 @@ interface PropertyContextValue {
     cancel?: () => void;
     delete?: () => void;
   };
+  modalState: ModalState;
+  setModalState: React.Dispatch<React.SetStateAction<ModalState>>;
 }
 
 export const PropertyContext = createContext<PropertyContextValue | null>(null);

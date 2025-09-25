@@ -9,6 +9,10 @@ import { PortalHost } from '@rn-primitives/portal';
 import React, { useRef } from 'react';
 import { Platform, Text, View } from 'react-native';
 import { KeyboardProvider } from 'react-native-keyboard-controller';
+import {
+  initialWindowMetrics,
+  SafeAreaProvider,
+} from 'react-native-safe-area-context';
 import { SignIn } from '@/components/sign-in';
 import { setAndroidNavigationBar } from '@/lib/android-navigation-bar';
 import { authClient } from '@/lib/auth-client';
@@ -74,13 +78,18 @@ export default function RootLayout() {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider value={DARK_THEME}>
-        <KeyboardProvider>
-          <StatusBar style="light" />
-          <GestureHandlerRootView className="bg-background" style={{ flex: 1 }}>
-            {session?.user ? <AuthenticatedApp /> : <UnauthenticatedApp />}
-            <PortalHost />
-          </GestureHandlerRootView>
-        </KeyboardProvider>
+        <SafeAreaProvider initialMetrics={initialWindowMetrics ?? undefined}>
+          <KeyboardProvider>
+            <StatusBar style="light" />
+            <GestureHandlerRootView
+              className="bg-background"
+              style={{ flex: 1 }}
+            >
+              {session?.user ? <AuthenticatedApp /> : <UnauthenticatedApp />}
+              <PortalHost />
+            </GestureHandlerRootView>
+          </KeyboardProvider>
+        </SafeAreaProvider>
       </ThemeProvider>
     </QueryClientProvider>
   );

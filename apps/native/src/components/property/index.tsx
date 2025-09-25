@@ -1,15 +1,18 @@
 import { useState } from 'react';
-import { View } from 'react-native';
+import { Modal, Text, View } from 'react-native';
 import {
   KeyboardAwareScrollView,
   KeyboardToolbar,
 } from 'react-native-keyboard-controller';
 import { Container } from '../container';
+import { Button } from '../ui/button';
+import { Input } from '../ui/input';
 import { Cancel, Create, Delete, Update } from './actions';
 import { Body } from './body';
 import { type Property, PropertyContext } from './context';
 import { Field } from './field';
 import { Header } from './header';
+import { initModalState, type ModalState, PropertyModal } from './modal';
 
 interface RootProps {
   children: React.ReactNode;
@@ -31,9 +34,10 @@ const Root = ({
 }: RootProps) => {
   const [property, setProperty] = useState<Property>(initialProperty);
 
-  const updateProperty = (prop: Property) => {
+  const updateProperty = (prop: Partial<Property>) => {
     setProperty((prev) => ({ ...prev, ...prop }));
   };
+  const [modalState, setModalState] = useState<ModalState>(initModalState);
 
   return (
     <>
@@ -48,9 +52,12 @@ const Root = ({
               property,
               updateProperty,
               actions,
+              modalState,
+              setModalState,
             }}
           >
             <View className={className}>{children}</View>
+            <PropertyModal />
           </PropertyContext.Provider>
         </Container>
       </KeyboardAwareScrollView>
