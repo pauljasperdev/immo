@@ -11,11 +11,6 @@ export default $config({
       providers: {
         aws: {
           region: 'eu-central-1',
-          profile:
-            {
-              production: 'fern-prod',
-              dev: 'fern-dev',
-            }[input?.stage] ?? 'fern-dev',
         },
       },
     };
