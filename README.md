@@ -2,7 +2,9 @@
 
 Expo app with hono backend.
 
-## Prerequisites
+## Getting Started
+
+### Prerequisites
 
 Make sure aws credentials are set at `~/.aws/credentials` or using `AWS Vault`
 
@@ -10,7 +12,7 @@ Make sure aws credentials are set at `~/.aws/credentials` or using `AWS Vault`
 pnpm install
 ```
 
-## Build iOS Simulator development client
+### Build iOS Simulator development client
 
 Requires MacOS with `XCode` and `XCode Command Line Tools` installed.
 
@@ -20,7 +22,7 @@ pnpm run build:dev:local
 
 Unzip artifact and drag on iOS Simulator to install.
 
-## Run dev server
+3## Run dev server
 
 ```bash
 pnpm dev
