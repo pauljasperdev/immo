@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "type": "module",
   "dependencies": {
-    "@aws-sdk/client-transcribe": "^3.710.0",
-    "@aws-sdk/client-s3": "^3.710.0",
-    "@aws-sdk/client-lambda": "^3.710.0",
-    "@aws-sdk/s3-request-presigner": "^3.710.0",
+    "@aws-sdk/client-lambda": "^3.942.0",
+    "@aws-sdk/client-s3": "^3.940.0",
+    "@aws-sdk/client-transcribe": "^3.940.0",
+    "@aws-sdk/s3-request-presigner": "^3.940.0",
     "sst": "*"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8"
+    "@types/aws-lambda": "^8.10.159"
   }
 }

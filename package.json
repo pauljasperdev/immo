@@ -21,7 +21,7 @@
     "build:pre": "cd apps/native && eas build --profile preview --platform ios --non-interactive --no-wait && cd -"
   },
   "dependencies": {
-    "sst": "3.17.12"
+    "sst": "3.17.24"
   },
   "devDependencies": {
     "@biomejs/biome": "2.1.2",
@@ -30,7 +30,6 @@
   "packageManager": "pnpm@10.15.0",
   "pnpm": {
     "overrides": {
-      "sst": "3.17.12",
       "glob@^10.0.0": ">=10.5.0"
     }
   }

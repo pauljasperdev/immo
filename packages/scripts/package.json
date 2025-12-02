@@ -8,7 +8,7 @@
     "sst": "*"
   },
   "devDependencies": {
-    "@types/node": "^22.13.11",
-    "tsx": "^4.19.2"
+    "@types/node": "^22.19.1",
+    "tsx": "^4.21.0"
   }
 }
