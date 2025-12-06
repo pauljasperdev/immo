@@ -11,6 +11,7 @@ export default function TabLayout() {
         tabBarInactiveTintColor: NAV_THEME.dark.colors.text,
         tabBarHideOnKeyboard: true,
         tabBarStyle: {
+          display: 'none',
           backgroundColor: NAV_THEME.dark.colors.background,
           borderTopColor: NAV_THEME.dark.colors.border,
         },
@@ -23,7 +24,7 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <TabBarIcon color={color} name="home" />,
         }}
       />
-      <Tabs.Screen
+      {/* <Tabs.Screen
         name="(learn)"
         options={{
           title: 'Explore',
@@ -38,7 +39,7 @@ export default function TabLayout() {
           title: 'AI',
           tabBarIcon: ({ color }) => <TabBarIcon color={color} name="bold" />,
         }}
-      />
+      /> */}
     </Tabs>
   );
 }
