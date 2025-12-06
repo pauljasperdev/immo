@@ -7,15 +7,14 @@ import { Container } from './container';
 
 export function KeyboardContainer({ children }: { children: React.ReactNode }) {
   return (
-    <>
+    <Container>
       <KeyboardAwareScrollView
-        bottomOffset={120}
         contentContainerStyle={{ flexGrow: 1 }}
         style={{ flexGrow: 1 }}
       >
-        <Container>{children}</Container>
+        {children}
       </KeyboardAwareScrollView>
-      <KeyboardToolbar />
-    </>
+      <KeyboardToolbar offset={{ closed: 62, opened: 62 }} />
+    </Container>
   );
 }
