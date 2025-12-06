@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "check": "biome check --write .",
-    "dev": "sst dev",
+    "dev": "aws-vault exec immo-dev -- sst dev",
     "check-types": "pnpm --recursive check-types",
     "env:apiUrl": "sst shell -- pnpm --filter scripts env:apiUrl",
     "db:push": "sst shell -- pnpm --filter @immo/core db:push",
@@ -18,7 +18,8 @@
     "auth:generate": "pnpm --filter @immo/core auth:generate",
     "build:pre:local": "cd apps/native && eas build --profile preview-simulator --platform ios --local  --output ./build/preview-simulator.tar.gz && cd -",
     "build:dev:local": "cd apps/native && eas build --profile development-simulator --platform ios --local  --output ./build/development-simulator.tar.gz && cd -",
-    "build:pre": "cd apps/native && eas build --profile preview --platform ios --non-interactive --no-wait && cd -"
+    "build:pre": "cd apps/native && eas build --profile preview --platform ios --non-interactive --no-wait && cd -",
+    "prebuild": "cd apps/native && npx expo prebuild --clean --platform ios && cd -"
   },
   "dependencies": {
     "sst": "3.17.24"
