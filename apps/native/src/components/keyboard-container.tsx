@@ -9,6 +9,7 @@ export function KeyboardContainer({ children }: { children: React.ReactNode }) {
   return (
     <Container>
       <KeyboardAwareScrollView
+        bottomOffset={90}
         contentContainerStyle={{ flexGrow: 1 }}
         style={{ flexGrow: 1 }}
       >
