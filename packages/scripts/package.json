@@ -2,7 +2,8 @@
   "name": "scripts",
   "type": "module",
   "scripts": {
-    "env:apiUrl": "pnpm exec tsx src/env/apiUrl.ts"
+    "env:echoServerUrl": "pnpm exec tsx src/env/echo-server-url.ts",
+    "env:setServerUrl": "pnpm exec tsx src/env/set-server-url.ts"
   },
   "dependencies": {
     "sst": "*"

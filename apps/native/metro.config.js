@@ -4,6 +4,7 @@ const { FileStore } = require('metro-cache');
 const { withNativeWind } = require('nativewind/metro');
 const path = require('node:path');
 
+
 const config = withTurborepoManagedCache(
   withNativeWind(getDefaultConfig(__dirname), {
     input: './global.css',
@@ -15,9 +16,7 @@ const config = withTurborepoManagedCache(
 config.resolver.unstable_enablePackageExports = true;
 
 module.exports = config;
-
 /**
- *
  * Move the Metro cache to the `.cache/metro` folder.
  * If you have any environment variables, you can configure Turborepo to invalidate it when needed.
  *

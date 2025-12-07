@@ -67,7 +67,7 @@ export default $config({
           await $`pnpm run db:migrate`;
 
           // Get the API URL after deployment
-          const apiUrl = await $`pnpm run env:apiUrl`.text();
+          const apiUrl = await $`pnpm run env:echoServerUrl`.text();
           const cleanApiUrl = apiUrl.trim();
 
           // const easProfile = { dev: 'preview', production: 'production' }[

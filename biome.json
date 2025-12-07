@@ -16,7 +16,8 @@
       "!bts.jsonc",
       "!**/.expo",
       "!**/.wrangler",
-      "!**/.source"
+      "!**/.source",
+      "!**/metro.config.js"
     ]
   },
   "extends": ["ultracite"],

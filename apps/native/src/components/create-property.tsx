@@ -9,10 +9,10 @@ interface CreatePropertyButtonProps {
   className?: string;
 }
 
-export const CreatePropertyButton = ({
+export function CreatePropertyButton({
   navigateTo,
   className,
-}: CreatePropertyButtonProps) => {
+}: CreatePropertyButtonProps) {
   const router = useRouter();
 
   const handlePress = () => {
@@ -24,9 +24,9 @@ export const CreatePropertyButton = ({
       <PlusCircle color={NAV_THEME.dark.colors.primary} />
     </TouchableOpacity>
   );
-};
+}
 
-export const CreateProperty = () => {
+export function CreateProperty() {
   return (
     <PropertyComposer.Root
       actions={{
@@ -36,10 +36,10 @@ export const CreateProperty = () => {
       }}
       className="gap-4 p-8"
     >
-      <PropertyComposer.Header />
+      <PropertyComposer.General />
       <PropertyComposer.Body />
       <PropertyComposer.Create />
       <PropertyComposer.Cancel />
     </PropertyComposer.Root>
   );
-};
+}

@@ -9,8 +9,9 @@
   "scripts": {
     "check": "biome check --write .",
     "dev": "aws-vault exec immo-dev -- sst dev",
+    "dev:ios": "pnpm --filter native ios",
     "check-types": "pnpm --recursive check-types",
-    "env:apiUrl": "sst shell -- pnpm --filter scripts env:apiUrl",
+    "env:echoServerUrl": "sst shell -- pnpm --filter scripts env:echoServerUrl",
     "db:push": "sst shell -- pnpm --filter @immo/core db:push",
     "db:studio": "sst shell -- pnpm --filter @immo/core db:studio",
     "db:generate": "sst shell -- pnpm --filter @immo/core db:generate",

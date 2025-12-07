@@ -13,7 +13,7 @@ export const initModalState: ModalState = {
   content: null,
 };
 
-export const PropertyModal = () => {
+export function PropertyModal() {
   const ctx = useProperty();
 
   if (!ctx.modalState.isOpen) {
@@ -30,4 +30,4 @@ export const PropertyModal = () => {
       </PropertyContext.Provider>
     </Portal>
   );
-};
+}

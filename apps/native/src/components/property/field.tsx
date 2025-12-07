@@ -8,7 +8,7 @@ interface FieldProps {
   id: string;
   onChange?: (value: string) => void;
 }
-export const Field = ({ value, id, onChange }: FieldProps) => {
+export function Field({ value, id, onChange }: FieldProps) {
   const keyboardType = typeof value === 'number' ? 'number-pad' : 'default';
 
   const { modalState, setModalState } = useProperty();
@@ -26,19 +26,20 @@ export const Field = ({ value, id, onChange }: FieldProps) => {
       <Text>{value as string}</Text>
     </TouchableOpacity>
   );
-};
+}
 
-const InputField = () => {
+function InputField() {
   const { modalState, setModalState } = useProperty();
 
   return (
-    <View className="flex-1 items-center justify-start">
+    <View className="flex-1 items-center justify-center px-16">
+      <Input />
       <View className="flex flex-row gap-2 pt-16">
         <Button
           onPress={() => setModalState({ ...modalState, isOpen: false })}
-          variant="secondary"
+          variant="outline"
         >
-          <Text>Schließen</Text>
+          <Text className="text-primary">Schließen</Text>
         </Button>
         <Button onPress={() => setModalState({ ...modalState, isOpen: false })}>
           <Text>Speichern</Text>
@@ -46,4 +47,4 @@ const InputField = () => {
       </View>
     </View>
   );
-};
+}
