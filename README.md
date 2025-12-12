@@ -4,9 +4,19 @@ Expo app with hono backend.
 
 ## Getting Started
 
-### Prerequisites
+### AWS Credentails
 
-Make sure aws credentials are set at `~/.aws/credentials` or using `AWS Vault`
+Make sure aws credentials are set at `~/.aws/credentials` or **better use `AWS Vault`**
+
+With `AWS Vault` add the following to use profile and inject credentials to `sst` commands.
+Leave `~/.aws/credentials` empty.
+
+```ini
+# ~/.aws/config
+[profile immo.dev]
+region=eu-central-1
+credential_process=aws-vault exec MyVaultProfile --json --no-session
+```
 
 ```bash
 pnpm install

@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "check": "biome check --write .",
-    "dev": "aws-vault exec immo-dev -- sst dev",
+    "dev": "pnpm sst dev",
     "dev:ios": "pnpm --filter native ios",
     "check-types": "pnpm --recursive check-types",
     "env:echoServerUrl": "sst shell -- pnpm --filter scripts env:echoServerUrl",
