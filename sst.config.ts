@@ -11,6 +11,11 @@ export default $config({
       providers: {
         aws: {
           region: 'eu-central-1',
+          profile:
+            {
+              production: 'immo.prod',
+              dev: 'immo.dev',
+            }[input?.stage] ?? 'immo.dev',
         },
       },
     };
