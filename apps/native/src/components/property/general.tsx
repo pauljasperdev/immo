@@ -1,18 +1,13 @@
-import {
-  ChevronDown,
-  ChevronUp,
-  EditIcon,
-  HouseIcon,
-} from 'lucide-react-native';
+import { ChevronDown, EditIcon, HouseIcon } from 'lucide-react-native';
 import { useState } from 'react';
-import { View } from 'react-native';
+import { Pressable, View } from 'react-native';
+import Animated, {
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from 'react-native-reanimated';
 import { Text } from '@/components/ui/text';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from '../ui/collapsible';
 import { Icon } from '../ui/icon';
 import { useProperty } from './context';
 
@@ -24,13 +19,17 @@ type ItemProps = {
 
 export function Item({ label, children, textSize = 'lg' }: ItemProps) {
   return (
-    <View className="flex-1 gap-1">
+    <View className="flex-1 gap-0.5">
       <Text className="text-muted-foreground text-sm">{label}</Text>
       <Text className={`font-semibold text-card-foreground text-${textSize}`}>
         {children}
       </Text>
     </View>
   );
+}
+
+function ItemRow({ children }: { children: React.ReactNode }) {
+  return <View className="flex-row gap-4 py-1">{children}</View>;
 }
 
 function GeneralOverview() {
@@ -42,7 +41,7 @@ function GeneralOverview() {
 
   return (
     <>
-      <View className="flex-row gap-4">
+      <ItemRow>
         <Item label="Kaufpreis">
           {property.price ? `${property.price.toLocaleString('de-DE')} €` : '-'}
         </Item>
@@ -51,13 +50,13 @@ function GeneralOverview() {
             ? `${property.rentalIncome.toLocaleString('de-DE')} €`
             : '-'}
         </Item>
-      </View>
+      </ItemRow>
 
-      <View className="flex-row gap-4">
+      <ItemRow>
         {property.size ? <Item label="Größe">{property.size} m²</Item> : null}
 
         {rendite ? <Item label="Rendite">{rendite.toFixed(2)}%</Item> : null}
-      </View>
+      </ItemRow>
     </>
   );
 }
@@ -74,8 +73,8 @@ function GeneralDetails() {
       : undefined;
 
   return (
-    <View className="mt-4 gap-4">
-      <View className="flex-row gap-4">
+    <View className="mt-4 gap-4 pb-2">
+      <ItemRow>
         <Item label="Verkehrswert">
           {property.marketValue
             ? `${property.marketValue.toLocaleString('de-DE')} €`
@@ -84,9 +83,9 @@ function GeneralDetails() {
         <Item label="Hausgeld">
           {hausgeld > 0 ? `${hausgeld.toLocaleString('de-DE')} €` : '-'}
         </Item>
-      </View>
+      </ItemRow>
 
-      <View className="flex-row gap-4">
+      <ItemRow>
         <Item label="Umlagefähig">
           {property.transferableExpenses
             ? `${property.transferableExpenses.toLocaleString('de-DE')} €`
@@ -97,9 +96,9 @@ function GeneralDetails() {
             ? `${property.nonTransferableExpenses.toLocaleString('de-DE')} €`
             : '-'}
         </Item>
-      </View>
+      </ItemRow>
 
-      <View className="flex-row gap-4">
+      <ItemRow>
         {einkaufsfaktor ? (
           <Item label="Einkaufsfaktor">{einkaufsfaktor.toFixed(1)}x</Item>
         ) : null}
@@ -108,8 +107,70 @@ function GeneralDetails() {
             ? `${property.rentalIncomeMarket.toLocaleString('de-DE')} €`
             : '-'}
         </Item>
-      </View>
+      </ItemRow>
     </View>
+  );
+}
+
+function AccordionItem({
+  isExpanded,
+  children,
+}: {
+  isExpanded: boolean;
+  children: React.ReactNode;
+}) {
+  const height = useSharedValue(0);
+
+  const animatedStyle = useAnimatedStyle(() => {
+    return {
+      height: withTiming(isExpanded ? height.value : 0, {
+        duration: 300,
+      }),
+      opacity: withTiming(isExpanded ? 1 : 0, {
+        duration: 300,
+      }),
+    };
+  });
+
+  return (
+    <Animated.View style={[animatedStyle, { overflow: 'hidden' }]}>
+      <View
+        className="absolute top-0 w-full"
+        onLayout={(e) => {
+          height.value = e.nativeEvent.layout.height;
+        }}
+      >
+        {children}
+      </View>
+    </Animated.View>
+  );
+}
+
+function AccordionTrigger({
+  isOpen,
+  setIsOpen,
+}: {
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
+}) {
+  const chevronStyle = useAnimatedStyle(() => {
+    return {
+      transform: [
+        {
+          rotate: withTiming(isOpen ? '180deg' : '0deg', { duration: 300 }),
+        },
+      ],
+    };
+  });
+  return (
+    <Pressable
+      className="mt-2 w-full flex-row items-center justify-center pt-2"
+      onPress={() => setIsOpen(!isOpen)}
+    >
+      <Animated.View style={chevronStyle}>
+        <Icon as={ChevronDown} className="text-primary" size={30} />
+      </Animated.View>
+    </Pressable>
   );
 }
 
@@ -139,22 +200,14 @@ export function General() {
           size={20}
         />
       </CardHeader>
-      <CardContent className="">
-        <Collapsible onOpenChange={setIsOpen} open={isOpen}>
-          <CollapsibleTrigger className="w-full">
-            <GeneralOverview />
-            <View className="my-2 w-full flex-row items-center justify-center">
-              <Icon
-                as={isOpen ? ChevronUp : ChevronDown}
-                className="text-primary"
-                size={30}
-              />
-            </View>
-          </CollapsibleTrigger>
-          <CollapsibleContent>
+      <CardContent>
+        <View>
+          <GeneralOverview />
+          <AccordionItem isExpanded={isOpen}>
             <GeneralDetails />
-          </CollapsibleContent>
-        </Collapsible>
+          </AccordionItem>
+          <AccordionTrigger isOpen={isOpen} setIsOpen={setIsOpen} />
+        </View>
       </CardContent>
     </Card>
   );
