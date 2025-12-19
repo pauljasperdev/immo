@@ -13,6 +13,12 @@ export default function PropertyLayout() {
           title: 'Create',
         }}
       />
+      <Stack.Screen
+        name="[propertyId]"
+        options={{
+          title: 'Property',
+        }}
+      />
     </Stack>
   );
 }

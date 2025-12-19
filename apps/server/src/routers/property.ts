@@ -11,21 +11,20 @@ import z from 'zod';
 import { protectedProcedure, router } from '../trpc/trpc';
 
 const propertyDataSchema = z.object({
-  strasse: z.string().optional(),
-  hausnummer: z.string().optional(),
-  plz: z.string().optional(),
-  stadt: z.string().optional(),
-  land: z.string().optional(),
-  wohnungsgroesse: z.number().optional(),
-  kaufpreis: z.number().optional(),
-  nettokaltmieteAktuell: z.number().optional(),
-  nettokaltmieteMarkt: z.number().optional(),
-  hausgeld: z.number().optional(),
-  umlagefahigeKosten: z.number().optional(),
-  nichtUmlagefahigeKosten: z.number().optional(),
-  kaufnebenkosten: z.number().optional(),
-  grunderwerbsteuer: z.number().optional(),
-  verkehrswert: z.number().optional(),
+  street: z.string().optional(),
+  houseNumber: z.string().optional(),
+  postalCode: z.string().optional(),
+  city: z.string().optional(),
+  country: z.string().optional(),
+  size: z.number().optional(),
+  price: z.number().optional(),
+  rentalIncome: z.number().optional(),
+  rentalIncomeMarket: z.number().optional(),
+  transferableExpenses: z.number().optional(),
+  nonTransferableExpenses: z.number().optional(),
+  closingCosts: z.number().optional(),
+  realEstateTransferTax: z.number().optional(),
+  marketValue: z.number().optional(),
 });
 
 export const propertyRouter = router({

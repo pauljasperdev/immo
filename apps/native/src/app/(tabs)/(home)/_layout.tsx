@@ -5,6 +5,7 @@ import {
   DrawerItem,
   DrawerItemList,
 } from '@react-navigation/drawer';
+import { useRouter } from 'expo-router';
 import { Drawer } from 'expo-router/drawer';
 import { View } from 'react-native';
 import { Container } from '@/components/container';
@@ -12,6 +13,8 @@ import { CreatePropertyButton } from '@/components/create-property';
 import { NAV_THEME } from '@/lib/theme';
 
 function CustomDrawerContent(props: DrawerContentComponentProps) {
+  const router = useRouter();
+
   return (
     <Container>
       <DrawerContentScrollView
@@ -28,6 +31,21 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
         {/* Main navigation items */}
         <View className="flex-1">
           <DrawerItemList {...props} />
+          <DrawerItem
+            icon={({ size }) => (
+              <FontAwesome
+                color={NAV_THEME.dark.colors.text}
+                name="building"
+                size={size}
+              />
+            )}
+            label="Property Demo"
+            labelStyle={{
+              fontWeight: '600',
+              color: NAV_THEME.dark.colors.text,
+            }}
+            onPress={() => router.push('/(tabs)/(home)/(_property)/demo123')}
+          />
         </View>
 
         {/* Settings at the bottom */}

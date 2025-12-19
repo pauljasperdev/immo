@@ -1,17 +1,9 @@
 import { useState } from 'react';
-import { Modal, Text, View } from 'react-native';
-import {
-  KeyboardAwareScrollView,
-  KeyboardToolbar,
-} from 'react-native-keyboard-controller';
-import { Container } from '../container';
-import { Button } from '../ui/button';
-import { Input } from '../ui/input';
+import { View } from 'react-native';
 import { Cancel, Create, Delete, Update } from './actions';
-import { Body } from './body';
 import { type Property, PropertyContext } from './context';
 import { Field } from './field';
-import { Header } from './header';
+import { General } from './general';
 import { initModalState, type ModalState, PropertyModal } from './modal';
 
 interface RootProps {
@@ -40,36 +32,24 @@ const Root = ({
   const [modalState, setModalState] = useState<ModalState>(initModalState);
 
   return (
-    <>
-      <KeyboardAwareScrollView
-        bottomOffset={62}
-        contentContainerStyle={{ flexGrow: 1 }}
-        style={{ flexGrow: 1 }}
-      >
-        <Container>
-          <PropertyContext.Provider
-            value={{
-              property,
-              updateProperty,
-              actions,
-              modalState,
-              setModalState,
-            }}
-          >
-            <View className={className}>{children}</View>
-            <PropertyModal />
-          </PropertyContext.Provider>
-        </Container>
-      </KeyboardAwareScrollView>
-      <KeyboardToolbar />
-    </>
+    <PropertyContext.Provider
+      value={{
+        property,
+        updateProperty,
+        actions,
+        modalState,
+        setModalState,
+      }}
+    >
+      <View className={className}>{children}</View>
+      <PropertyModal />
+    </PropertyContext.Provider>
   );
 };
 
 export const PropertyComposer = {
   Root,
-  Header,
-  Body,
+  General,
   Field,
   Create,
   Update,
